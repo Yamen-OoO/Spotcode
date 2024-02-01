@@ -1,0 +1,90 @@
+section.servcies .cardd {
+    height: fit-content;
+    background-color: var(--theme-background-1);
+    border: var(--border_1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--background_3);
+
+}
+
+section.servcies .container {
+    position: relative;
+    /* z-index: 1; */
+}
+
+section.servcies .cardd svg {
+    fill: var(--background_3);
+}
+
+.servcies .back-layer {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    width: 30%;
+    height: 100%;
+    transform: skewX(-50deg);
+    background-color: var(--backlayer_1);
+    border: 10px solid var(--theme-background-2);
+    outline: 5px solid var(--background_3);
+    border-top: none;
+    border-bottom: none;
+    z-index: 0;
+}
+
+.servcies .moving-layer {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme-background-2);
+    z-index: 0;
+    animation: movelayer linear infinite;
+    animation-delay: 2s;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.14, .75, .2, 1.01);
+
+}
+
+@keyframes movelayer {
+    0% {
+        bottom: 0;
+    }
+
+    30% {
+        bottom: 100%;
+    }
+
+    70% {
+        bottom: 100%;
+    }
+
+    100% {
+        bottom: 0%;
+    }
+}
+
+.servcies .back-circle {
+    position: absolute;
+    right: -10%;
+    top: 60%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--backlayer_1);
+    border: 10px solid var(--theme-background-2);
+    outline: 5px solid var(--background_3);
+    z-index: 0;
+}
+.servcies .back-circle2 {
+    position: absolute;
+    left: -2%;
+    top: 0%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--backlayer_1);
+    border: 10px solid var(--theme-background-2);
+    outline: 5px solid var(--background_3);
+    z-index: 0;
+}

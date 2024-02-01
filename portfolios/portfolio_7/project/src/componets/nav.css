@@ -1,0 +1,33 @@
+
+nav {
+    z-index: 2;
+    transition: .5s linear;
+    background-color: rgba(255, 0, 0, 0.313);
+}
+
+nav svg {
+    fill: var(--theme-text-1);
+}
+
+.navbar-brand {
+    color: var(--text_1) !important;
+    transition: .5s linear;
+    font-weight: bolds;
+}
+
+.nav-link {
+    color: var(--theme-text-1) !important;
+}
+
+.dropdown-menu{
+    background-color: var(--theme-background-1) !important;
+    border: var(--theme-border-1) !important;
+}
+.dropdown-menu p{
+    color: var(--theme-text-1);
+    cursor: pointer;
+}
+.dropdown-menu p:hover{
+    background-color: var(--theme-background-1) !important;
+    color: var(--theme-text-1);
+}

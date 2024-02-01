@@ -1,0 +1,41 @@
+
+.color-switcher-container {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 190px;
+    height: fit-content;
+    z-index: 1000;
+    background-color: white;
+    /* background-color: var(--theme-background-2); */
+    padding: 10px;
+    left: -190px;
+    transition: .6s ease;
+}
+
+.switcher-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -39px;
+}
+
+.switcher-button svg {
+    animation: rotate infinite 5s linear;
+}
+
+.open {
+    left: -0%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+

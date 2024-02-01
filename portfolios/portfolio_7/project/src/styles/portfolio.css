@@ -1,0 +1,212 @@
+*{
+  /* outline: 1px solid blue; */
+}
+.project {
+  max-width:400px;
+  width: 100%;
+  height: 350px;
+  /* height: 100%; */
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px var(--background_3);
+
+}
+.project::before{
+  content: attr(data-name);
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  bottom: -100%;
+  left: 0;
+  background-color: var(--background_2);
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;  
+  z-index: 1;
+  transition: .5s ease;
+}
+.project img{
+  transition: .4s ease;
+  object-position: center;
+
+}
+.project:hover img {
+  transform: scale(1.1);
+  filter: blur(1px);
+}
+.project:hover::before {
+  bottom: 0%;
+}
+
+.portfolio .back-layer {
+  position: absolute;
+  left: 0%;
+  top: 30%;
+  width: 100%;
+  height: 20%;
+  transform: skewY(-20deg);
+  background-color: var(--backlayer_1);
+  border: 10px solid var(--theme-background-2);
+  outline: 5px solid var(--background_3);
+  border-left: none;
+  border-right: none;
+  z-index: 0;
+}
+.portfolio .moving-layer{
+  position: absolute;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--theme-background-2);
+  /* background-color: red; */
+  z-index: 0;
+  animation: movelayer linear infinite ;
+  animation-delay: 5s;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.14, .75, .2, 1.01);
+
+}
+@keyframes movelayer {
+  0%{
+    right: 0;
+  }
+  30%{
+    right: 100%;
+  }
+  70%{
+    right: 100%;
+  }
+  100%{
+    right: 0%;
+  }
+}
+.portfolio .back-circle{
+  position: absolute;
+  right: -10%;
+  top: 60%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--backlayer_1);
+  border: 10px solid var(--theme-background-2);
+  outline: 5px solid var(--background_3);
+  z-index: 0;
+}
+
+
+
+
+
+.swiper {
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  max-width: 500px;
+  width: 100%;
+  /* height: 300px; */
+  background-color: var(--theme-background-2);
+  text-align: center;
+  padding: 10px;
+  border: .5px solid white;
+  /* box-shadow: 0 5px 5px  rgb(60, 60, 60) ; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+.swiper-slide::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--backlayer_1);
+  z-index: -1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 130px;
+  height: 130px;
+  margin: 0 auto 30px;
+  border: 5px solid transparent;
+  outline: 5px solid var(--background_1);
+}
+.swiper-pagination-bullet-active{
+  background-color: var(--background_2) !important;
+  border: 1px solid white;
+}
+.testimonial .swiper-slide .name{
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+} 
+.testimonial .back-layer {
+  position: absolute;
+  left: 0;
+  top: 60%;
+  width: 100%;
+  height: 40%;
+  transform: skewY(20deg);
+  background-color: var(--backlayer_1);
+  border: 10px solid var(--theme-background-2);
+  outline: 5px solid var(--background_3);
+  border-left: none;
+  border-right: none;
+  z-index: 0;
+}
+
+.testimonial .moving-layer{
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--theme-background-2);
+  /* background-color: red; */
+  z-index: 0;
+  animation: movelayer2 linear infinite ;
+  animation-delay: 5s;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.14, .75, .2, 1.01);
+
+}
+@keyframes movelayer2  {
+  0%{
+    left: 0;
+  }
+  30%{
+    left: 100%;
+  }
+  70%{
+    left: 100%;
+  }
+  100%{
+    left: 0%;
+  }
+}
+.testimonial .back-circle{
+  position: absolute;
+  right: -5%;
+  top: 10%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--backlayer_1);
+  border: 10px solid var(--theme-background-2);
+  outline: 5px solid var(--background_3);
+  z-index: 0;
+}
