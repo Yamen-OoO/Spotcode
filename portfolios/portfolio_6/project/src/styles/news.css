@@ -1,0 +1,23 @@
+
+.news{
+    padding: 100px 0 50px;
+  }
+
+.new {
+    max-width: 350px;
+    width: 100%;
+    /* border: var(--border_1); */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px var(--background_3);
+}
+.new img{
+    height: 250px;
+}
+.new button {
+    background-color: var(--background_3);
+    color: white;
+    padding: 5px 7px;
+    border: 0;
+    outline: none;
+}

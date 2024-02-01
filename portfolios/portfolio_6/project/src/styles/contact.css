@@ -1,0 +1,31 @@
+
+.contact{
+    padding: 100px 0 50px;
+}
+
+.contact .cardd{
+    box-shadow: 0px 0px 10px var(--background_1);
+}
+
+
+.contact svg{
+    fill: var(--background_1);
+}
+.contact input ,
+.contact textarea{
+    outline: none;
+    border: var(--border_2);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: var(--background_1);
+}
+textarea{
+    min-height: 300px;
+    max-height: 350px;
+}
+.contact .icon-container{
+    width: 40px;
+    height: 40px;
+}
+
