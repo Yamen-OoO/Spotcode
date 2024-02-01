@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <meta name="description" content="SpotCode is a startup programming company in Syria,Damascus">
+    <link rel="icon" href="/imgs/imagecompressor/logoOrange.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/products.css">
+    <!--^ Aos Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <nav class="position-fixed w-100" data-aos="fade-down" fade-aos-delay="300">
+        <div class="container position-relative d-flex justify-content-between align-items-center py-0 z-3">
+            <div class="logo fw-bold">
+                <a href="/">
+                    <img loading="lazy" style="width: 50px;" src="/imgs/imagecompressor/logo.png" alt="company logo">
+                </a>
+            </div>
+            <div class="d-flex gap-3">
+                <a href="/contact.html" class="contact  bg-transparent align-self-center">Contact Us</a>
+                <button class="menu rounded-circle d-flex justify-content-center align-items-center"
+                    onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+            </div>
+            <a href="/contact.html" class="position-absolute startaproject text-white bg-transparent border-0"><span
+                    class="textOrange2">Start</span> a Project</a>
+        </div>
+
+
+        <div class="nav-links w-100 position-fixed top-0 left-0 z-0">
+            <div class="container d-flex justify-content-around align-items-center flex-wrap">
+                <div class="menu-left position-relative d-flex justify-content-center w-100">
+                    <p class="menu-left-word position-absolute fw-bold text-white ">Menu</p>
+                    <ul>
+                        <li><a href="/index.html"
+                                class="sectionTitle text-white fw-bold d-block position-relative">Home</a>
+                        </li>
+                        <li><a href="/projects.html"
+                                class="sectionTitle text-white fw-bold d-block position-relative">Projects</a>
+                        </li>
+                        <li><a href="/services.html"
+                                class="sectionTitle text-white fw-bold d-block position-relative">Services</a>
+                        </li>
+                        <li><a href="/products.html"
+                                class="sectionTitle text-white fw-bold d-block position-relative">Products</a>
+                        </li>
+                        <li><a href="/contact.html"
+                                class="sectionTitle text-white fw-bold d-block position-relative">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-right text-white mt-5">
+                    <a href="/login.html" class="text-white d-block position-relative">Login</a>
+                    <p class="textOrange">services@spotcode.net</p>
+                    <p class="textOrange">+963 993277655</p>
+                    <p class="textOrange">syria , Damascus</p>
+                    <ul class="social-media list-unstyled mt-4">
+                        <li><a href="https://www.facebook.com/profile.php?id=100095150770088&notif_id=1690595498692617&notif_t=page_user_activity&ref=notif"
+                                class="text-white">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/spotcode8/" class="text-white">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="line"></div>
+    <button id="gototop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-up"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+        </svg>
+    </button>
+    <div class="back-text-animation">
+        <h1 class="ml3">Spotcode</h1>
+    </div>
+    <header class="position-relative blackSection overflow-hidden d-grid " style="place-content: center;">
+        <div class="container ">
+            <div class="row gap-4 gap-lg-0">
+                <div class=" col-lg-7 col-12 py-3" data-aos="fade-right">
+                    <p class="textOrange sectionLittleP mb-2">Welcome To SpodtCode Products Page</p>
+                    <h5 class="sectionTitle text-white mt-5 mb-4 ps-3">Our Passion</h5>
+                    <p class="textGray sectionP mb-5 ps-3">Our company offers a wide range of high-quality portfolios
+                        that are perfect for professionals,
+                        students, and anyone in need of a stylish and functional way to organize their documents.</p>
+                    <a href="contact.html" class="ms-4 bg-transparent text-white position-relative border-0">LET'S TALK
+                        NOW</a>
+                </div>
+                <div class="col-lg-5 col-10" data-aos="fade-left" data-aos-delay="1000">
+                    <div class="box position-relative">
+                        <img src="/imgs/imagecompressor/productsHeader2.jpg" class="object-fit-cover"
+                            alt="products header imge">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="one pb-5 position-relative blackSection">
+        <div class="container">
+            <div class="faq text-white">
+                <h1 class="mb-4 sectionTitle2 z-1 position-relative">FAQ</h1>
+                <div class="questions-container  p-3 d-flex flex-column gap-3">
+                    <div class="question p-3">
+                        <div class="d-flex gap-5 justify-content-between">
+                            <p> What is the difference between a portfolio and a CV?</p>
+                            <a class="text-white" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                    class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapseExample1">
+                            <div class="card card-body bg-transparent mt-3">
+                                A portfolio and a CV serve different purposes. A CV (Curriculum Vitae) is a document
+                                that provides a detailed summary of your education, work experience, skills, and
+                                achievements. It is typically used for job applications and focuses on your professional
+                                background.
+
+                                On the other hand, a portfolio is a collection of your work samples, projects, and
+                                creative achievements. It showcases your skills, talents, and creativity through visual
+                                representations such as images, videos, or interactive elements. Portfolios are commonly
+                                used in creative fields such as design, art, photography, and web development to
+                                demonstrate your capabilities and style.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question p-3">
+                        <div class="d-flex gap-5 justify-content-between">
+                            <p>When should I use a portfolio</p>
+                            <a class="text-white" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                    class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body bg-transparent mt-3">
+                                A portfolio is beneficial when you want to showcase your work visually and provide
+                                tangible evidence of your skills and expertise. It is particularly useful in creative
+                                industries where employers or clients want to see examples of your past projects or
+                                creative output. If you are applying for roles such as graphic designer, web developer,
+                                photographer, or artist, a portfolio can help you stand out and provide a comprehensive
+                                view of your abilities.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question p-3">
+                        <div class="d-flex gap-5 justify-content-between">
+                            <p>What should I include in my portfolio?</p>
+                            <a class="text-white" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                    class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapseExample3">
+                            <div class="card card-body bg-transparent mt-3">
+                                Your portfolio should include a selection of your best work that highlights your skills
+                                and expertise. It can consist of images, videos, case studies, descriptions, or
+                                interactive elements depending on the nature of your work. It's important to curate your
+                                portfolio and showcase a diverse range of projects that demonstrate your abilities and
+                                creativity effectively.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question p-3">
+                        <div class="d-flex gap-5 justify-content-between">
+                            <p>Can I request specific features or modifications to a portfolio?</p>
+                            <a class="text-white" data-bs-toggle="collapse" href="#collapseExample4" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                    class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapseExample4">
+                            <div class="card card-body bg-transparent mt-3">
+                                Absolutely! We understand that each individual has unique requirements. You can contact
+                                our support team and discuss your specific needs. We'll do our best to accommodate your
+                                requests and provide a tailored solution.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question p-3">
+                        <div class="d-flex gap-5 justify-content-between">
+                            <p> Is there a refund policy in case I am not satisfied with my purchase?</p>
+                            <a class="text-white" data-bs-toggle="collapse" href="#collapseExample5" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                    class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapseExample5">
+                            <div class="card card-body bg-transparent mt-3">
+                                Yes, we offer a refund policy. If you are not satisfied with your purchase, please
+                                contact our support team within a specified timeframe (usually 14 days) to request a
+                                refund. We will review your request and process it accordingly.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question p-3">
+                        <div class="d-flex gap-5 justify-content-between">
+                            <p>Do you provide customer support or assistance after the purchase?</p>
+                            <a class="text-white" data-bs-toggle="collapse" href="#collapseExample6" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                    class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapseExample6">
+                            <div class="card card-body bg-transparent mt-3">
+                                Yes, we provide customer support and assistance after the purchase. If you have any
+                                questions, issues, or need guidance in setting up or customizing your portfolio, our
+                                support team is here to help. You can reach out to us via email.
+                                ticket.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question p-3">
+                        <div class="d-flex gap-5 justify-content-between">
+                            <p>Where will my portfolio live if I purchase one from your company?</p>
+                            <a class="text-white" data-bs-toggle="collapse" href="#collapseExample4" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"
+                                    class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapseExample4">
+                            <div class="card card-body bg-transparent mt-3">
+                                Your portfolio will be hosted on our service. We provide website hosting, ensuring that your portfolio is securely and reliably accessible to your audience. You can trust that your portfolio will be hosted on our platform, allowing you to showcase your work seamlessly and without any technical hassles.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="three py-4 position-relative blackSection px-4">
+        <div class="container">
+            <h5 class="sectionTitle2 text-white mt-5">Our Products</h5>
+            <div class="rows d-flex justify-content-around flex-md-nowrap flex-wrap gap-5  ">
+                <div class="product-box product1" data-name="1" data-bs-toggle="modal" data-aos="fade"
+                    data-bs-target="#product1">
+                    <img src="/imgs/imagecompressor/1.jpg" class="object-fit-cover" alt="spotcode product"
+                        loding="lazy">
+                </div>
+                <div class="product-box product2" data-name="2" data-bs-toggle="modal" data-aos="fade"
+                    data-bs-target="#product2">
+                    <img src="/imgs/imagecompressor/2.jpg" class="object-fit-cover" alt="spotcode product"
+                        loding="lazy">
+                </div>
+            </div>
+            <div class="rows d-flex justify-content-around flex-md-nowrap flex-wrap gap-5 ">
+                <div class="product-box product1" data-name="3" data-bs-toggle="modal" data-aos="fade"
+                    data-bs-target="#product3">
+                    <img src="/imgs/imagecompressor/3.jpg" class="object-fit-cover" alt="spotcode product"
+                        loding="lazy">
+                </div>
+                <div class="product-box product2" data-name="4" data-bs-toggle="modal" data-aos="fade"
+                    data-bs-target="#product4">
+                    <img src="/imgs/imagecompressor/4.jpg" class="object-fit-cover" alt="spotcode product"
+                        loding="lazy">
+                </div>
+            </div>
+            <div class="rows d-flex justify-content-around flex-md-nowrap flex-wrap gap-5 ">
+                <div class="product-box product1" data-name="5" data-bs-toggle="modal" data-aos="fade"
+                    data-bs-target="#product5">
+                    <img src="/imgs/imagecompressor/5.jpg" class="object-fit-cover" alt="spotcode product"
+                        loding="lazy">
+                </div>
+                <div class="product-box product2" data-name="6" data-bs-toggle="modal" data-aos="fade"
+                    data-bs-target="#product6">
+                    <img src="/imgs/imagecompressor/6.jpg" class="object-fit-cover" alt="spotcode product"
+                        loding="lazy">
+                </div>
+            </div>
+            <div class="rows d-flex justify-content-around flex-md-nowrap flex-wrap gap-5 ">
+                <div class="product-box product1" data-name="7" data-bs-toggle="modal" data-aos="fade"
+                    data-bs-target="#product7">
+                    <img src="/imgs/imagecompressor/7.jpg" class="object-fit-cover" alt="spotcode product"
+                        loding="lazy">
+                </div>
+                <div class="product-box product2" data-name="1" data-bs-toggle="modal" data-aos="fade"
+                    data-bs-target="#soon">
+                    <div class="layer">
+                        <h1 class="ml2">COOMING SOON</h1>
+                    </div>
+                    <img src="/imgs/imagecompressor/logoOrange.png" class="object-fit-cover" alt="spotcode product"
+                        loding="lazy">
+                </div>
+            </div>
+            <div class="rows d-flex justify-content-around flex-md-nowrap flex-wrap gap-5 ">
+                <div class="product-box product1 mb-3 mb-md-0" data-name="1" data-bs-toggle="modal" data-aos="fade"
+                    data-bs-target="#soon">
+                    <div class="layer">
+                        <h1 class="ml1">COOMING SOON</h1>
+
+                    </div>
+                    <img src="/imgs/imagecompressor/logoOrange.png" class="object-fit-cover" alt="spotcode product"
+                        loding="lazy">
+                </div>
+                <div class="product-box product2" data-name="1" data-bs-toggle="modal" data-aos="fade"
+                    data-bs-target="#soon">
+                    <div class="layer">
+                        <h1 class="ml2">COOMING SOON</h1>
+                    </div>
+                    <img src="/imgs/imagecompressor/logoOrange.png" class="object-fit-cover" alt="spotcode product"
+                        loding="lazy">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="modal fade" id="product1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="rowss d-flex flex-wrap gap-5 flex-sm-nowrap justify-content-between">
+                            <div class="product-detail">
+                                <h3 class="mb-4 textOrange fw-bold">From Hope to Success</h3>
+                                <h5 class="text-white mb-4">ID : 1</h5>
+                                <h5 class="text-white mb-4">Colors Available : 3</h5>
+                                <h5 class="text-white mb-4">User Photos : 1-2</h5>
+                                <h5 class="text-white mb-4">Projects Number : 4</h5>
+                                <h5 class="text-white mb-4">Updates Number : 3</h5>
+                                <h5 class="mb-5 price">Price : 100k SP</h5>
+                                <a href="/portfolios/portfolio_1/index.html" class="demo-button me-2">Go Live</a>
+                                <a href="/portfoliosDetailsPage/porftfolio1.html" class="demo-button">Show Details</a>
+                            </div>
+                            <div class="product-box">
+                                <img src="/imgs/imagecompressor/1.jpg" alt="spotcode product" loding="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="product2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="rowss d-flex flex-wrap gap-5 flex-sm-nowrap justify-content-between">
+                            <div class="product-detail">
+                                <h3 class="mb-4 textOrange fw-bold">Working with Hope</h3>
+                                <h5 class="text-white mb-4">ID : 2</h5>
+                                <h5 class="text-white mb-4">Colors Available : 4</h5>
+                                <h5 class="text-white mb-4">User Photos : 1-2</h5>
+                                <h5 class="text-white mb-4">Projects Number : 4</h5>
+                                <h5 class="text-white mb-4">Updates Number : 3</h5>
+                                <h5 class="mb-5 price">Price : 120k SP</h5>
+                                <a href="/portfolios/portfolio_2/index.html" class="demo-button">Go Live</a>
+                                <a href="/portfoliosDetailsPage/porftfolio2.html" class="demo-button">Show Details</a>
+
+                            </div>
+                            <div class="product-box">
+                                <img src="/imgs/imagecompressor/2.jpg" alt="spotcode product" loding="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="product3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="rowss d-flex flex-wrap gap-5 flex-sm-nowrap justify-content-between">
+                            <div class="product-detail">
+                                <h3 class="mb-4 textOrange fw-bold">Hope as a Motivator</h3>
+                                <h5 class="text-white mb-4">ID : 3</h5>
+                                <h5 class="text-white mb-4">Colors Available : 5</h5>
+                                <h5 class="text-white mb-4">User Photos : 2</h5>
+                                <h5 class="text-white mb-4">Projects Number : 4-6</h5>
+                                <h5 class="text-white mb-4">Updates Number : 3</h5>
+                                <h5 class="mb-5 price">Price : 140k SP</h5>
+                                <a href="/portfolios/portfolio_3/index.html" class="demo-button">Go Live</a>
+                                <a href="/portfoliosDetailsPage/porftfolio3.html" class="demo-button">Show Details</a>
+                            </div>
+                            <div class="product-box">
+                                <img src="/imgs/imagecompressor/3.jpg" alt="spotcode product" loding="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="product4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="rowss d-flex flex-wrap gap-5 flex-sm-nowrap justify-content-between">
+                            <div class="product-detail">
+                                <h3 class="mb-4 textOrange fw-bold">Hope in Action</h3>
+                                <h5 class="text-white mb-4">ID : 4</h5>
+                                <h5 class="text-white mb-4">Colors Available : 6</h5>
+                                <h5 class="text-white mb-4">User Photos : 2</h5>
+                                <h5 class="text-white mb-4">Projects Number : 4-6</h5>
+                                <h5 class="text-white mb-4">Updates Number : 3</h5>
+                                <h5 class="mb-5 price">Price : 160k SP</h5>
+                                <a href="/portfolios/portfolio_4/index.html" class="demo-button">Go Live</a>
+                                <a href="/portfoliosDetailsPage/porftfolio4.html" class="demo-button">Show Details</a>
+
+                            </div>
+                            <div class="product-box">
+                                <img src="/imgs/imagecompressor/4.jpg" alt="spotcode product" loding="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="product5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="rowss d-flex flex-wrap gap-5 flex-sm-nowrap justify-content-between">
+                            <div class="product-detail">
+                                <h3 class="mb-4 textOrange fw-bold">Success Stories</h3>
+                                <h5 class="text-white mb-4">ID : 5</h5>
+                                <h5 class="text-white mb-4">Colors Available : 6</h5>
+                                <h5 class="text-white mb-4">User Photos : 2</h5>
+                                <h5 class="text-white mb-4">Projects Number : 4-6</h5>
+                                <h5 class="text-white mb-4">Updates Number : 4</h5>
+                                <h5 class="mb-5 price">Price : 180k SP</h5>
+                                <a href="/portfolios/protfolio_5/index.html" class="demo-button">Go Live</a>
+                                <a href="/portfoliosDetailsPage/porftfolio5.html" class="demo-button">Show Details</a>
+                            </div>
+                            <div class="product-box">
+                                <img src="/imgs/imagecompressor/5.jpg" alt="spotcode product" loding="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="product6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="rowss d-flex flex-wrap gap-5 flex-sm-nowrap justify-content-between">
+                            <div class="product-detail">
+                                <h3 class="mb-4 textOrange fw-bold">Hopeful Ambitions</h3>
+                                <h5 class="text-white mb-4">ID : 6</h5>
+                                <h5 class="text-white mb-4">Colors Available : 6</h5>
+                                <h5 class="text-white mb-4">User Photos : 2</h5>
+                                <h5 class="text-white mb-4">Projects Number : Unlimited</h5>
+                                <h5 class="text-white mb-4">Updates Number : Unlimited</h5>
+                                <h5 class="mb-5 price">Price : 200k SP</h5>
+                                <a href="https://www.spotcode.net/products/portfolio_6" class="demo-button">Go Live</a>
+                                <a href="/portfoliosDetailsPage/porftfolio6.html" class="demo-button">Show Details</a>
+                            </div>
+                            <div class="product-box">
+                                <img src="/imgs/imagecompressor/6.jpg" alt="spotcode product" loding="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="product7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="rowss d-flex flex-wrap gap-5 flex-sm-nowrap justify-content-between">
+                            <div class="product-detail">
+                                <h3 class="mb-4 textOrange fw-bold">The Power of Hope</h3>
+                                <h5 class="text-white mb-4">ID : 7</h5>
+                                <h5 class="text-white mb-4">Colors Available : 6</h5>
+                                <h5 class="text-white mb-4">User Photos : 3-4</h5>
+                                <h5 class="text-white mb-4">Projects Number : Unlimited</h5>
+                                <h5 class="text-white mb-4">Updates Number : Unlimited</h5>
+                                <h5 class="mb-5 price">Price : 250k SP</h5>
+                                <a href="https://www.spotcode.net/products/portfolio_7" class="demo-button">Go Live</a>
+                                <a href="/portfoliosDetailsPage/porftfolio7.html" class="demo-button">Show Details</a>
+                            </div>
+                            <div class="product-box">
+                                <img src="/imgs/imagecompressor/7.jpg" alt="spotcode product" loding="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+    <footer class="position-relative">
+        <div class="news-line bg-orange py-2 overflow-hidden d-md-block d-none">
+            <div class="news-p text-white position-relative d-flex justify-content-around gap-3">
+                <p>we don’t just do projects, we partner with product owners</p>
+                <p>Since our clients stay with us for so long, we must be doing things right</p>
+            </div>
+        </div>
+        <div class="container position-relative">
+            <div class="row align-items-center justify-content-center  flex-wrap" style="min-height: 260px;">
+                <div class="col-md-6 col-10">
+                    <div class="rows d-flex justify-content-center gap-5">
+                        <div class="left">
+                            <h3 class="text-white fw-bold">Reach Us</h3>
+                            <p class="mt-4 textOrange">services@spotcode.net</p>
+                            <p class="textOrange">+963 993277655</p>
+                        </div>
+                        <div class="right">
+                            <h3 class="text-white fw-bold">Follow Us</h3>
+                            <a href="https://www.facebook.com/profile.php?id=100095150770088&notif_id=1690595498692617&notif_t=page_user_activity&ref=notif"
+                                class="text-white mt-4  textOrange d-block">Facebook</a>
+                            <a href="https://www.instagram.com/spotcode8/" class="text-white textOrange">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-10 ps-lg-5">
+                    <h3 class="fw-bold">Explore</h3>
+                    <ul class="list-unstyled d-flex gap-4 mt-4 mb-0">
+                        <li><a href="projects.html" class="">Projects</a></li>
+                        <li><a href="contact.html" class="">Contact</a></li>
+                    </ul>
+                    <p>Damascus ,syria</p>
+                </div>
+            </div>
+        </div>
+        <img loading="lazy" src="/imgs/imagecompressor/footerStars.png" class="position-absolute stars"
+            style="width: 150px;right: 40px; top:100px; z-index: index 1;;" alt="SpotCode footer">
+        <img loading="lazy" src="/imgs/imagecompressor/FooterCircle.png" class="position-absolute bottom-0"
+            style="width: 150px;" alt="SpotCode footer">
+        <div class="position-absolute bottom-0 d-flex gap-4 text-white" style="left: 20%;">
+            <a class="textGray" style="font-size: .7rem;" href="privcay.html">Privacy</a>
+            <p class="textGray" style="font-size: .7rem;" href="">CopyRight&copy;2023</p>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<!--^ this is indector helps you to see the point -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<!-- <script src="/js/js minified/NavScrollMagic.min.js"></script> -->
+<!-- <script src="/js/js minified/MagicScroll.min.js"></script> -->
+
+
+<!--^ Aos library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ disable: 'mobile' , once:'true' });
+</script>
+
+<!-- ^ text animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script src="/js/base.js"></script>
+<script src="/js/products.js"></script>
+<!-- <script src="/js/js minified/index.min.js"></script> -->
+
+
+</html>
