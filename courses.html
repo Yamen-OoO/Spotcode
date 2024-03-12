@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <meta name="description" content="SpotCode is a startup programming company in Syria,Damascus">
+    <link rel="icon" href="/imgs/imagecompressor/logoOrange.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="/css/css minified/base.min.css"> -->
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="/css/courses.css">
+    <link rel="stylesheet" href="/css/base.css">
+
+    <!--^ Aos Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+
+<body id="my-scrollbar">
+    <div class="logo-letter rellax s" data-rellax-speed="2">S</div>
+    <div class="logo-letter rellax p" data-rellax-speed="2">P</div>
+    <div class="logo-letter rellax o" data-rellax-speed="2">O</div>
+    <div class="logo-letter rellax t" data-rellax-speed="2">T</div>
+    <div class="logo-letter rellax c" data-rellax-speed="2">C</div>
+    <div class="logo-letter rellax oo" data-rellax-speed="2">O</div>
+    <div class="logo-letter rellax d" data-rellax-speed="2">D</div>
+    <div class="logo-letter rellax e" data-rellax-speed="2">E</div>
+    <div id="line"></div>
+    <button id="gototop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-up"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+        </svg>
+    </button>
+
+    <nav class="position-fixed w-100 " data-aos="fade-down" fade-aos-delay="260">
+        <div class="container position-relative d-flex justify-content-between align-items-center py-0 z-3">
+            <div class="logo fw-bold">
+                <a href="/">
+                    <img loading="lazy" style="width: 50px;" src="/imgs/imagecompressor/logo.png" alt="company logo">
+                </a>
+            </div>
+            <div class="d-flex gap-3">
+                <div class="languages align-self-center d-flex">
+                    <button class="mb-0 me-2 ">العربية</button>
+                    <p class="text-white">|</p>
+                    <button class="mb-0 ms-2 active">English</button>
+                </div>
+                <a href="/contact.html" data-currentLangeuage="en" data-enText="Contact Us" data-arText="اتصل بنا" class="contact  bg-transparent align-self-center">Contact Us</a>
+                <button class="menu rounded-circle d-flex justify-content-center align-items-center"
+                    onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+            </div>
+            <a href="/contact.html" data-currentLangeuage="en" data-enText="Start a Project" data-arText="مشروع أبدأ" class="position-absolute startaproject text-white bg-transparent border-0">Starta Project</a>
+        </div>
+
+
+        <div class="nav-links w-100 position-fixed top-0 left-0 z-0">
+            <div class="container d-flex justify-content-around align-items-center flex-wrap">
+                <div class="menu-left position-relative d-flex justify-content-center w-100">
+                    <p class="menu-left-word position-absolute fw-bold text-white " data-currentLangeuage="en" data-enText="Menu" data-arText="القائمة">Menu</p>
+                    <ul>
+                        <li><a href="/index.html"
+                                class="sectionTitle text-white fw-bold d-block position-relative" data-currentLangeuage="en" data-enText="Home" data-arText="الرئيسية">Home</a>
+                        </li>
+                        <li><a href="/about.html"
+                            class="sectionTitle text-white fw-bold d-block position-relative" data-currentLangeuage="en" data-enText="Team" data-arText="فريقنا">Team</a>
+                    </li>
+                        <li><a href="/projects.html"
+                                class="sectionTitle text-white fw-bold d-block position-relative" data-currentLangeuage="en" data-enText="Projects" data-arText="المشاريع" >Projects</a>
+                        </li>
+                        <li><a href="/services.html"
+                                class="sectionTitle text-white fw-bold d-block position-relative" data-currentLangeuage="en" data-enText="Services" data-arText="الخدمات">Services</a>
+                        </li>
+                        <li><a href="/courses.html"
+                            class="sectionTitle text-white fw-bold d-block position-relative" data-currentLangeuage="en" data-enText="Courses" data-arText="الكورسات">Courses</a>
+                    </li>
+                        <li><a href="/products.html"
+                                class="sectionTitle text-white fw-bold d-block position-relative" data-currentLangeuage="en" data-enText="Products" data-arText="المنتجات">Products</a>
+                        </li>
+                        <li><a href="/contact.html"
+                                class="sectionTitle text-white fw-bold d-block position-relative" data-currentLangeuage="en" data-enText="Contact" data-arText="التواصل">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-right text-white mt-5">
+                    <a href="/login.html" class="text-white d-block position-relative" data-currentLangeuage="en" data-enText="Login" data-arText="التسجيل الدخول">Login</a>
+                    <p class="textOrange">services@spotcode.net</p>
+                    <p class="textOrange">+963 993277655</p>
+                    <p class="textOrange">syria , Damascus</p>
+                    <ul class="social-media list-unstyled mt-4">
+                        <li><a href="https://www.facebook.com/profile.php?id=100095150770088&notif_id=1690595498692617&notif_t=page_user_activity&ref=notif"
+                                class="text-white">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/spotcode8/" class="text-white">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="position-relative blackSection overflow-hidden">
+
+        <div class="container">
+            <div class="box position-relative text-white  py-3 mt-0 col-12 col-lg-9" data-aos="fade-right"
+                data-aos-delay="1000">
+                <p class="sectionLittleP mb-5" data-currentLangeuage="en" data-arText="مرحبًا بك في صفحة دورات SPOTCODE"
+                    data-enText="WELCOME TO SPOTCODE COURSES PAGE">WELCOME TO SPOTCODE COURSES PAGE</p>
+
+                <h1 class="sectionTitle mb-5 ps-lg-4 " data-currentLangeuage="en"
+                    data-enText="Dive into the world of distinctive courses"
+                    data-arText="انغمس في عالم الدورات المميزة">Dive into the world of distinctive courses </h1>
+                <p class="text-white sectionP mb-4 ps-lg-4" data-currentLangeuage="en"
+                    data-enText="Specialist from our team of programmers in the company"
+                    data-arText="متخصص من فريق المبرمجين لدينا في الشركة">Specialist from our team of programmers in the
+                    company</p>
+                <a href="#courses" data-currentLangeuage="en" data-enText="CHECK COURSES"
+                    data-arText="التحقق من الدورات" class="ms-4 bg-transparent text-white position-relative border-0">
+                    CHECK COURSES
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="one position-relative blackSection">
+        <div class="container">
+            <div class="box position-relative overflow-hidden d-grid text-white ">
+                <div class="text-left ">
+                    <p class="sectionLittleP text-white" data-aos="fade-left" data-currentLangeuage="en" data-arText="شركتنا هي شركة ناشئة في مجال التكنولوجيا في سوريا، وتتكون من فريق موهوب من المبرمجين و
+                        المصممين الذين تتراوح أعمارهم بين 20 و26 عامًا. يسعدنا أن نشارككم أن شركتنا تحقق إنجازات رائعة
+                        النجاح في تطوير برامج عالية الجودة لشركات محددة." data-enText="Spotcode is a growing tech startup in Syria, is made up of a talented team of programmers and
+                        designers aged between 20 and 26. We are excited to share that our company is achieving great
+                        success in developing high-quality software for specific businesses.">
+                        Spotcode is a growing tech startup in Syria, is made up of a talented team of programmers and
+                        designers aged between 20 and 26. We are excited to share that our company is achieving great
+                        success in developing high-quality software for specific businesses.</p>
+                </div>
+                <div class="text-right ms-auto position-relative">
+                    <p class="sectionLittleP text-white" data-aos="fade-right" data-currentLangeuage="en" data-enText="To help more people
+                become programmers and potentially join our team, Spotcode is launching new training courses.
+                These courses will provide hands-on learning opportunities for individuals interested in
+                expanding
+                their programming skills with us." data-arText="لمساعدة المزيد من الناس
+                ليصبحوا مبرمجين ومن المحتمل أن ينضموا إلى فريقنا، تطلق شركتنا دورات تدريبية جديدة.
+                ستوفر هذه الدورات فرص التعلم العملي للأفراد المهتمين بها
+                توسيع
+                مهاراتهم في البرمجة معنا." data-aos-delay="500">To help more people
+                        become programmers and potentially join our team, Spotcode is launching new training courses.
+                        These courses will provide hands-on learning opportunities for individuals interested in
+                        expanding
+                        their programming skills with us.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tow px-4 blackSection">
+        <img class="fly-image z-1 fly-image2 position-absolute d-sm-block d-none " style="bottom: 20%; left: 20px;"
+            src="/imgs/imagecompressor/Stars1.png" alt="back image">
+        <img class="fly-image z-1 fly-image2 position-absolute" style="top: 20%; right: 20px;"
+            src="/imgs/imagecompressor/footerStars.png" alt="back image">
+        <div class="container-fluid  h-100 position-relative z-1 ">
+            <div class="row h-100 d-flex text-white ">
+                <div class="p-4  col-4 align-self-start" data-aos="fade-left" data-currentLangeuage="en" data-enText="The courses offered cover a wide range of topics, starting from the basics of programming to web
+                development encompassing both frontend and backend aspects. Participants will have the
+                opportunity to explore popular programming languages such as JavaScript and Python, which are
+                highly sought after in the industry." data-arText="تغطي الدورات المقدمة مجموعة واسعة من المواضيع، بدءًا من أساسيات البرمجة وحتى الويب
+                يشمل التطوير جوانب الواجهة الأمامية والخلفية. سيكون لدى المشاركين
+                فرصة لاستكشاف لغات البرمجة الشائعة مثل JavaScript وPython
+                مطلوبة للغاية في هذه المجال.">
+                    <p>The courses offered cover a wide range of topics, starting from the basics of programming to web
+                        development encompassing both frontend and backend aspects. Participants will have the
+                        opportunity to explore popular programming languages such as JavaScript and Python, which are
+                        highly sought after in the industry.</p>
+                </div>
+                <div class="col-4 align-self-start">
+                    <img src="/imgs/courses.png" class="h-100  w-100 object-fit-cover" alt="">
+                </div>
+                <div class=" p-4 col-4 align-self-end" data-aos="fade-right" data-currentLangeuage="en" data-enText="Additionally, the curriculum includes a module on mobile development using Flutter, a versatile
+                framework for creating applications that work on multiple platforms. Participants will also
+                engage in a specialized course on artificial intelligence, gaining insights into the latest
+                technologies and applications in this rapidly evolving field." data-arText="بالإضافة إلى ذلك، يتضمن المنهج وحدة دراسية حول تطوير الأجهزة المحمولة باستخدام فلاتر وهو برنامج متعدد الاستخدامات
+                إطار عمل لإنشاء التطبيقات التي تعمل على منصات متعددة.و المشاركين أيضا
+                المشاركة في دورة متخصصة حول الذكاء الاصطناعي، واكتساب نظرة ثاقبة حول الأحدث
+                التقنيات والتطبيقات في هذا المجال سريع التطور.">
+
+                    <p>Additionally, the curriculum includes a module on mobile development using Flutter, a versatile
+                        framework for creating applications that work on multiple platforms. Participants will also
+                        engage in a specialized course on artificial intelligence, gaining insights into the latest
+                        technologies and applications in this rapidly evolving field.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <section class="three blackSection " id="courses">
+        <img class="fly-image z-1 fly-image2 position-absolute d-sm-block d-none " style="bottom: 8%; left: 20px;"
+            src="/imgs/imagecompressor/Stars1.png" alt="back image">
+        <img class="fly-image z-1 fly-image2 position-absolute" style="top: 96%; right: 20px;"
+            src="/imgs/imagecompressor/footerStars.png" alt="back image">
+        <div class="container-fluid container-fluid position-relative z-1">
+            <div class="intro-text mb-5 ps-4" data-aos="fade-right">
+                <h1 class="sectionTitle text-white" data-currentLangeuage="en" data-enText="OUR COURSES"
+                    data-arText="الدورات">OUR COURSES</h1>
+            </div>
+            <div class="course-row  d-flex justify-content-around mt-5  position-relative">
+                <div class="course-image d-flex flex-column">
+                    <img loading="lazy " src="/imgs/feCourse.png" alt="SpotCode projects" class="">
+                </div>
+                <div class="course-details text-white" data-aos="fade">
+                    <h1 data-currentLangeuage="en" data-enText="Frontend develpment course"
+                        data-arText="دورة تطوير الواجهة الأمامية">Frontend
+                        develpment course</h1>
+                    <p class="my-3" data-currentLangeuage="en" data-enText="Master the art of creating visually appealing and user-friendly websites through our frontend
+                    development course."
+                        data-arText="أتقن فن إنشاء مواقع ويب جذابة بصريًا وسهلة الاستخدام من خلال دورة تطوير الواجهة الأمامية لدينا.">
+                        Master the art of creating visually appealing and user-friendly websites through our frontend
+                        development course.
+                    </p>
+                    <button>
+                        <a href="./courses pages/frontendCourse.html" data-currentLangeuage="en" data-enText="See More"
+                            data-arText="التفاصيل">See More</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="course-row  d-flex justify-content-around mt-5 position-relative">
+                <div class="course-details text-white" data-aos="fade">
+                    <h1 data-currentLangeuage="en" data-enText="Javascript introduction course"
+                        data-arText="دورة مقدمة عن جافا سكريبت">
+                        Javascript introduction course</h1>
+                    <p class="my-3" data-currentLangeuage="en" data-enText=" Discover the fundamentals of JavaScript, the language of the web, and learn how to add
+                    interactivity and dynamic functionality to websites." data-arText="اكتشف أساسيات جاقا سكربت لغة الويب، وتعرف على كيفية الإضافة
+                    التفاعلية والوظائف الديناميكية لمواقع الويب.">
+                        Discover the fundamentals of JavaScript, the language of the web, and learn how to add
+                        interactivity and dynamic functionality to websites.
+                    </p>
+                    <button>
+                        <a href="./courses pages/jsCourse.html" data-currentLangeuage="en" data-enText="See More"
+                            data-arText="التفاصيل">See More</a>
+                    </button>
+                </div>
+                <div class="course-image d-flex flex-column">
+                    <img loading="lazy" src="/imgs/jsCourse.png" alt="SpotCode projects" class="">
+                </div>
+
+            </div>
+            <div class="course-row  d-flex justify-content-around mt-5  position-relative">
+                <div class="course-image d-flex flex-column">
+                    <img loading="lazy " class="object-fit-cover" src="/imgs/pbcourse.png" alt="SpotCode projects"
+                        class="">
+                </div>
+                <div class="course-details text-white" data-aos="fade">
+                    <h1 data-currentLangeuage="en" data-enText="Programming Basics" data-arText="أساسيات البرمجة">
+                        Programming Basics
+                    </h1>
+                    <p class="my-3" data-currentLangeuage="en" data-enText="Lay a solid foundation in programming with Python, a versatile and powerful language known for
+                    its simplicity and readability." data-arText="ضع أساسًا متينًا في البرمجة باستخدام لغة بايثون وهي لغة متعددة الاستخدامات وقوية معروفة بها
+                    بساطته وسهولة القراءة.">
+                        Lay a solid foundation in programming with Python, a versatile and powerful language known for
+                        its simplicity and readability. </p>
+                    <button>
+                        <a href="./courses pages/pbCourse.html" data-currentLangeuage="en" data-enText="See More"
+                            data-arText="التفاصيل">See More</a>
+                    </button>
+                </div>
+            </div>
+            <div class="course-row  d-flex justify-content-around mt-5 position-relative">
+                <div class="course-details text-white" data-aos="fade">
+                    <h1 data-currentLangeuage="en" data-enText="Mobile development course"
+                        data-arText="دورة تطوير الهاتف المحمول">Mobile
+                        development course</h1>
+                    <p data-currentLangeuage="en" data-enText=" Build cross-platform mobile applications efficiently using Flutter, a popular framework that
+                    allows for seamless development across iOS and Android platforms." data-arText="قم ببناء تطبيقات الهاتف المحمول عبر الأنظمة الأساسية بكفاءة باستخدام فلاتر وهو إطار عمل شائع يستخدم
+                    يسمح بالتطوير السلس عبر منصات أندرويد و أبل." class="my-3">
+                        Build cross-platform mobile applications efficiently using Flutter, a popular framework that
+                        allows for seamless development across iOS and Android platforms.
+                    </p>
+                    <button>
+                        <a href="./courses pages/mobileCourse.html" data-currentLangeuage="en" data-enText="See More"
+                            data-arText="التفاصيل">See More</a>
+                    </button>
+                </div>
+                <div class="course-image d-flex flex-column">
+                    <img loading="lazy" src="/imgs/mCourse.png" alt="SpotCode projects" class="">
+                </div>
+            </div>
+            <div class="course-row  d-flex justify-content-around mt-5  position-relative">
+                <div class="course-image d-flex flex-column">
+                    <img loading="lazy " src="/imgs/aiCourse.png" alt="SpotCode projects" class="">
+                </div>
+                <div class="course-details text-white" data-aos="fade">
+                    <h1 data-currentLangeuage="en" data-enText="Artificial Intelligence course"
+                        data-arText="دورة الذكاء الاصطناعي">
+                        Artificial Intelligence course</h1>
+                    <p class="my-3" data-currentLangeuage="en" data-enText="Explore the fascinating world of AI and learn how to develop intelligent systems that can mimic
+                    human behavior and decision-making.
+                    " data-arText="استكشف عالم الذكاء الاصطناعي المذهل وتعلم كيفية تطوير أنظمة ذكية يمكنها التقليد
+                    السلوك البشري واتخاذ القرار.">
+                        Explore the fascinating world of AI and learn how to develop intelligent systems that can mimic
+                        human behavior and decision-making.
+                    </p>
+                    <button>
+                        <a href="./courses pages/aiCourse.html" data-currentLangeuage="en" data-enText="See More"
+                            data-arText="التفاصيل">See More</a>
+                    </button>
+                </div>
+            </div>
+            <div class="course-row  d-flex justify-content-around mt-5 position-relative">
+                <div class="course-details text-white" data-aos="fade">
+                    <h1 data-currentLangeuage="en" data-enText="Backend develpment course"
+                        data-arText="دورة تطوير الواجهة الخلفية">Backend development course</h1>
+                    <p data-currentLangeuage="en" data-enText="  Dive into the world of server-side programming and database management with our comprehensive
+                    backend development course." data-arText="انغمس في عالم البرمجة من جانب الخادم وإدارة قواعد البيانات من خلال خدماتنا الشاملة
+                    ." class="my-3">
+                        Dive into the world of server-side programming and database management with our comprehensive
+                        backend development course.
+                    </p>
+                    <button>
+                        <a href="./courses pages/backendCourse.html" data-currentLangeuage="en" data-enText="See More"
+                            data-arText="التفاصيل">See More</a>
+                    </button>
+                </div>
+                <div class="course-image d-flex flex-column">
+                    <img loading="lazy" src="/imgs/beposter.png" alt="SpotCode projects" class="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="four blackSection">
+        <div class="container">
+            <h1 class="text-white" data-currentLangeuage="en" data-enText="How do i register for the course?"
+                data-arText="كيف أسجل في الدورة؟">How do i register for the course?</h1>
+            <p class="text-white mt-4" data-currentLangeuage="en" data-enText="To stay updated on the latest news and receive notifications about our upcoming
+            courses, simply join our
+            WhatsApp group. At a designated time, group members will receive a message detailing the courses
+            schedule, location, and start date. Additionally, we will conduct a poll to determine the preferred
+            timing for the course during Ramadan. Join us on WhatsApp to stay informed and participate in shaping
+            our upcoming programming course. Hurry , seats are limited and the courses will start very soon."
+                data-arText="للبقاء على اطلاع على آخر الأخبار وتلقي الإخطارات حول موقعنا القادم
+            الدورات، ببساطة انضم إلينا
+            مجموعة الواتساب. في وقت محدد، سيتلقى أعضاء المجموعة رسالة تحتوي على تفاصيل الدورات
+            الجدول الزمني والموقع وتاريخ البدء. بالإضافة إلى ذلك، سنقوم بإجراء استطلاع لتحديد الأفضل
+            توقيت الدورة خلال شهر رمضان . انضم إلينا على الواتساب للبقاء على اطلاع والمشاركة في التشكيل
+            دورة البرمجة القادمة لدينا. سارعوا فالمقاعد محدودة وستبدأ الدورات قريبا جدا."> To stay updated on the
+                latest news and receive notifications about our upcoming
+
+                courses, simply join our
+                WhatsApp group. At a designated time, group members will receive a message detailing the courses
+                schedule, location, and start date. Additionally, we will conduct a poll to determine the preferred
+                timing for the course during Ramadan. Join us on WhatsApp to stay informed and participate in shaping
+                our upcoming programming course. Hurry , seats are limited and the courses will start very soon. </p>
+
+
+            <p data-currentLangeuage="en" data-enText="Use the barcode or click on the link to join the group."
+                data-arText="استخدم الباركود أو انقر على الرابط للانضمام إلى المجموعة." class="text-white mt-4">Use the
+                barcode or click on the link to join the group.</p>
+            <p data-currentLangeuage="en" data-enText="Open WhatsApp and take a shot using the camera. It will directly take you to the
+            group. Join now!" data-arText="افتح تطبيق واتساب والتقط صورة باستخدام الكاميرا. سوف يأخذك مباشرة إلى
+            مجموعة. نضم الان!" class=" text-white mb-4">Open WhatsApp and take a shot using the camera. It will
+                directly take you to the
+                group. Join now!</p>
+            <div class="d-flex justify-content-start gap-5">
+                <img src="/imgs/whatsappbarcode.jpeg" width="240" height="240" alt="">
+                <div>
+                    <h6 class="text-white" data-currentLangeuage="en"
+                        data-enText="Or use the link below to join the group."
+                        data-arText="أو استخدم الرابط أدناه للانضمام إلى المجموعة">Or use the link below to join the
+                        group.</h6>
+                    <a href="https://chat.whatsapp.com/Lqxl1qibqaQ5kC0wAUtooC" class="my-2 d-block">WHATSAPP</a>
+                    <h6 data-currentLangeuage="en" data-enText="Contact us if you have any questions."
+                        data-arText="تواصل معنا إذا كان عندك أي أسئلة." class="text-white">Contact us if you have any
+                        questions.</h6>
+                    <p class="textOrange">+963 993 277 655</p>
+                    <p class="textOrange">+963 965 560 905</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="five blackSection">
+        <div class="container">
+            <h5 class="mt-5 mb-4 text-white" data-currentLangeuage="en" data-arText="تحقق من بعض منتجاتنا"
+                data-enText="check some of our products">check some of our products</h5>
+            <div
+                class="rows gap-5 flex-wrap flex-md-nowrap  d-flex justify-content-center justify-content-md-between align-items-center">
+                <a href="products.html" class="product-box" data-aos="fade">
+                    <img src="/imgs/imagecompressor/servicesProduct1.jpg" class="product-img " loading="lazy"
+                        alt="services porduct">
+                </a>
+                <a href="products.html" class="product-box" data-aos="fade">
+                    <img src="/imgs/imagecompressor/servicesProduct2.jpg" class="product-img " loading="lazy"
+                        alt="services porduct">
+                </a>
+                <a href="products.html" class="product-box" data-aos="fade">
+                    <img src="/imgs/imagecompressor/servicesProduct3.jpg" class="product-img " loading="lazy"
+                        alt="services porduct">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer class="position-relative">
+        <div class="news-line bg-orange py-2 overflow-hidden d-md-block d-none">
+            <div class="news-p text-white position-relative d-flex justify-content-around gap-3">
+                <p data-currentLangeuage="en" data-enText="we don’t just do projects, we partner with product owners"
+                    data-arText="نحن لا نقوم فقط بالمشاريع، بل نتشارك مع أصحاب المنتجات">we don’t just do projects, we
+                    partner with product owners</p>
+                <p data-currentLangeuage="en"
+                    data-enText="Since our clients stay with us for so long, we must be doing things right"
+                    data-arText="نظرًا لأن عملائنا يبقون معنا لفترة طويلة، فيجب علينا القيام بالأمور بشكل صحيح">Since
+                    our clients stay with us for so long, we must be doing things right</p>
+            </div>
+        </div>
+        <div class="container position-relative">
+            <div class="row align-items-center justify-content-center  flex-wrap" style="min-height: 260px;">
+                <div class="col-md-6 col-10">
+                    <div class="rows d-flex justify-content-center gap-5">
+                        <div class="left">
+                            <h3 class="text-white fw-bold" data-currentLangeuage="en" data-enText="Reach Us" data-arText="اتصل بنا">Reach Us</h3>
+                            <p class="mt-4 textOrange">services@spotcode.net</p>
+                            <p class="textOrange">+963 993277655</p>
+                        </div>
+                        <div class="right">
+                            <h3 class="text-white fw-bold" data-currentLangeuage="en" data-enText="Follow Us" data-arText="تابعنا">Follow Us</h3>
+                            <a href="https://www.facebook.com/profile.php?id=100095150770088&notif_id=1690595498692617&notif_t=page_user_activity&ref=notif"
+                                class="text-white mt-4  textOrange d-block">Facebook</a>
+                            <a href="https://www.instagram.com/spotcode8/" class="text-white textOrange">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-10 ps-lg-5">
+                    <h3 class="fw-bold" data-currentLangeuage="en" data-enText="Explore" data-arText="اكتشف">Explore</h3>
+                    <ul class="list-unstyled d-flex gap-4 mt-4 mb-0">
+                        <li><a href="projects.html" data-currentLangeuage="en" data-enText="Projects" data-arText="المشاريع">Projects</a></li>
+                        <li><a href="contact.html"  data-currentLangeuage="en" data-enText="Contact" data-arText="التواصل">Contact</a></li>
+                    </ul>
+                    <p data-currentLangeuage="en" data-enText="Damascus , syria" data-arText="دمشق , سوريا">Damascus ,syria</p>
+                </div>
+            </div>
+        </div>
+        <img loading="lazy" src="/imgs/imagecompressor/footerStars.png" class="position-absolute stars"
+            style="width: 150px;right: 40px; top:100px; z-index: index 1;;" alt="SpotCode footer">
+        <img loading="lazy" src="/imgs/imagecompressor/FooterCircle.png" class="position-absolute bottom-0"
+            style="width: 150px;" alt="SpotCode footer">
+        <div class="position-absolute bottom-0 d-flex gap-4 text-white" style="left: 20%;">
+            <a class="textGray" style="font-size: .7rem;" href="privcay.html">Privacy</a>
+            <p class="textGray" style="font-size: .7rem;" href="">CopyRight&copy;2023</p>
+        </div>
+    </footer>
+
+</body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+
+
+
+
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> -->
+
+<!--^ this is indector helps you to see the point -->
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+
+<!-- <script src="/js/NavScrollMagic.js"></script> -->
+<!-- <script src="/js/MagicScroll.js"></script> -->
+
+
+<!--^ Aos library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ once: true });
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<!--^ this is indector helps you to see the point -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+<!--  momentum scroll -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar"></script> -->
+<!-- <script src="/js/momentum.js"></script> -->
+<script src="/js/base.js"></script>
+<script src="/js/translate.js"></script>
+<!-- <script src="/js/NavScrollMagic.js"></script> -->
+<!-- <script src="/js/about.js"></script> -->
+
+
+
+
+
+</html>

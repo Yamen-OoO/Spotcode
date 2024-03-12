@@ -1,21 +1,30 @@
-let tringlesNumber = 50
-for (let i = 0; i <= tringlesNumber - 1; i++) {
-    let tringle = document.createElement("div")
-    if (i < 25) {
-        tringle.classList.add("triangle1")
+let tringlesNumber 
+let sections = document.querySelectorAll(".section")
+console.log(sections)
+sections.forEach((sec,j) =>{
+    if (j === 0){
+        tringlesNumber = 10
+    }else{
+        tringlesNumber = 20
     }
-    else {
-        tringle.classList.add("triangle2")
+    for (let i = 0; i <= tringlesNumber - 1; i++) {
+        let tringle = document.createElement("div")
+        if (i < tringlesNumber/2) {
+            tringle.classList.add("triangle1")
+        }
+        else {
+            tringle.classList.add("triangle2")
+        }
+    
+        tringle.style.left = Math.floor(Math.random() * 80) + "%"
+        tringle.style.top = Math.floor(Math.random() * 90) + "%"
+        sec.appendChild(tringle)
+        window.addEventListener('scroll', function () {
+            var rotation = window.scrollY / 10; // Adjust the division factor to control the rotation speed
+            tringle.style.transform = 'rotate(' + rotation + 'deg)';
+        })
     }
-
-    tringle.style.left = Math.floor(Math.random() * 80) + "%"
-    tringle.style.top = Math.floor(Math.random() * 90) + "%"
-    document.body.appendChild(tringle)
-    window.addEventListener('scroll', function () {
-        var rotation = window.scrollY / 10; // Adjust the division factor to control the rotation speed
-        tringle.style.transform = 'rotate(' + rotation + 'deg)';
-    })
-}
+})
 
 
 

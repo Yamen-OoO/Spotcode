@@ -1,15 +1,22 @@
+/* english font family */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* arabic font famliy */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap') ;
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    /* outline: 1px solid rgb(255, 0, 0); */
 }
-*::selection{
+
+*::selection {
     background-color: var(--OrangeText);
     color: white;
 }
+
 :root {
     --BlackBackground: #121212;
     --BlackTransparent: #272626;
@@ -22,6 +29,7 @@
     --SectionTitle2: 3.5rem;
     /* --BlackNavBAr : rgb(27, 27, 27); */
 }
+
 h1,
 h2,
 h3,
@@ -30,9 +38,11 @@ p,
 div {
     margin: 0;
 }
-body{
+
+body {
     overflow-x: hidden !important;
 }
+
 a {
     text-decoration: none;
 }
@@ -44,6 +54,7 @@ a {
 .textOrange {
     color: var(--OrangeText);
 }
+
 .textOrange2 {
     color: var(--OrangeBackgournd);
 }
@@ -51,13 +62,16 @@ a {
 .bg-orange {
     background-color: var(--OrangeText);
 }
+
 .bg-transparent {
     background-color: transparent;
 }
-.bg-orange2{
+
+.bg-orange2 {
     background-color: var(--OrangeBackgournd);
 }
-.bg-nav-black{
+
+.bg-nav-black {
     background-color: var(--BlackBackground);
 }
 
@@ -82,9 +96,11 @@ a {
 .sectionP {
     font-size: 1.3rem;
 }
+
 body {
     scroll-behavior: smooth;
-     /* -webkit-overflow-scrolling: touch; */
+    height: 100vh;
+    /* -webkit-overflow-scrolling: touch; */
 }
 
 #line {
@@ -95,14 +111,14 @@ body {
     top: 0;
     right: 0;
     transition: .5s linear;
-    z-index: 100000;
+    z-index: 100;
 }
 
 ::-webkit-scrollbar {
     width: 0px;
 }
 
-#gototop{
+#gototop {
     width: 40px;
     height: 40px;
     position: fixed;
@@ -119,19 +135,34 @@ body {
     display: none;
 
 }
-#gototop::before{
-    content:'';
+
+#gototop::before {
+    content: '';
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
     height: 100%;
-    border: 1px solid white ;
+    border: 1px solid white;
     background-color: var(--OrangeText);
     z-index: -1;
     border-radius: 50%;
 }
 
+#smooth-scroll-wrapper {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+}
+
+#smooth-scroll-wrappe-content {
+    width: 100%;
+    height: fit-content;
+}
 
 
 
@@ -204,7 +235,6 @@ nav .nav-links.open {
 .nav-links .container .menu-left {
     gap: 20px;
     max-width: 500px;
-    
 }
 
 nav .menu-left-word {
@@ -218,11 +248,9 @@ nav .menu-left-word {
     transform: scaleX(1.2);
     transition: .5s ease;
     left: -20px;
-    font-size: 3.5rem !important;
+    font-size: 2.8rem;
 }
-.nav-links .container .menu-left ul {
-    list-style: none;
-}
+
 .nav-links .container .menu-left ul li a:hover {
     left: 0;
 }
@@ -275,9 +303,11 @@ footer .news-p p {
         left: -200%;
     }
 }
-footer .row .col-md-6 a{
+
+footer .row .col-md-6 a {
     color: black;
 }
+
 footer::before {
     content: '';
     position: absolute;
@@ -342,20 +372,24 @@ footer::before {
     html {
         font-size: 10px;
     }
+
     nav .menu-left-word {
         top: -20px;
     }
-    footer .row .col-md-6:nth-child(2){
+
+    footer .row .col-md-6:nth-child(2) {
         width: fit-content;
         margin: 0 auto;
     }
-    footer .row .col-md-6 a{
+
+    footer .row .col-md-6 a {
         color: white;
     }
-    footer img.stars{       
+
+    footer img.stars {
         display: none;
     }
-    
+
 
 }
 
@@ -364,19 +398,24 @@ footer::before {
     html {
         font-size: 13px;
     }
-    footer .row .col-md-6:nth-child(2){
+
+    footer .row .col-md-6:nth-child(2) {
         width: fit-content;
     }
-    footer .row .col-md-6 a{
+
+    footer .row .col-md-6 a {
         color: white;
     }
-    footer img.stars{       
+
+    footer img.stars {
         display: block;
     }
-    footer img.stars{       
+
+    footer img.stars {
         display: none;
     }
 }
+
 @media (min-width:768px) {
     html {
         font-size: 16px;
@@ -386,14 +425,16 @@ footer::before {
 
 
 
-@media (max-width:930px){
+@media (max-width:930px) {
     footer::before {
         width: 100%;
     }
-    footer .row:last-child{
+
+    footer .row:last-child {
         color: white;
     }
-    footer .row .col-md-6 a{
+
+    footer .row .col-md-6 a {
         color: white;
     }
 
