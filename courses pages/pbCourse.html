@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course 2</title>
+    <meta name="description" content="SpotCode is a startup programming company in Syria,Damascus">
+    <link rel="icon" href="/imgs/imagecompressor/logo.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/course-details.css">
+    <!--^ Aos Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <div id="line"></div>
+    <button id="gototop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-up"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+        </svg>
+    </button>
+
+    <nav class="position-fixed w-100 " data-aos="fade-down" fade-aos-delay="260">
+        <div class="container position-relative d-flex justify-content-between align-items-center py-0 z-3">
+            <div class="logo fw-bold">
+                <a href="/">
+                    <img loading="lazy" style="width: 50px;" src="/imgs/imagecompressor/logo.png" alt="company logo">
+                </a>
+            </div>
+            <div class="d-flex gap-3">
+                <div class="languages align-self-center d-flex">
+                    <button class="mb-0 me-2 ">العربية</button>
+                    <p class="text-white">|</p>
+                    <button class="mb-0 ms-2 active">English</button>
+                </div>
+                <a href="/contact.html" data-currentLangeuage="en" data-enText="Contact Us" data-arText="اتصل بنا"
+                    class="contact  bg-transparent align-self-center">Contact Us</a>
+                <button class="menu rounded-circle d-flex justify-content-center align-items-center"
+                    onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+            </div>
+            <a href="/contact.html" data-currentLangeuage="en" data-enText="Start a Project" data-arText="مشروع أبدأ"
+                class="position-absolute startaproject text-white bg-transparent border-0">Starta Project</a>
+        </div>
+
+
+        <div class="nav-links w-100 position-fixed top-0 left-0 z-0">
+            <div class="container d-flex justify-content-around align-items-center flex-wrap">
+                <div class="menu-left position-relative d-flex justify-content-center w-100">
+                    <p class="menu-left-word position-absolute fw-bold text-white " data-currentLangeuage="en"
+                        data-enText="Menu" data-arText="القائمة">Menu</p>
+                    <ul>
+                        <li><a href="/index.html" class="sectionTitle text-white fw-bold d-block position-relative"
+                                data-currentLangeuage="en" data-enText="Home" data-arText="الرئيسية">Home</a>
+                        </li>
+                        <li><a href="/about.html" class="sectionTitle text-white fw-bold d-block position-relative"
+                                data-currentLangeuage="en" data-enText="Team" data-arText="فريقنا">Team</a>
+                        </li>
+                        <li><a href="/projects.html" class="sectionTitle text-white fw-bold d-block position-relative"
+                                data-currentLangeuage="en" data-enText="Projects" data-arText="المشاريع">Projects</a>
+                        </li>
+                        <li><a href="/services.html" class="sectionTitle text-white fw-bold d-block position-relative"
+                                data-currentLangeuage="en" data-enText="Services" data-arText="الخدمات">Services</a>
+                        </li>
+                        <li><a href="/courses.html" class="sectionTitle text-white fw-bold d-block position-relative"
+                                data-currentLangeuage="en" data-enText="Courses" data-arText="الكورسات">Courses</a>
+                        </li>
+                        <li><a href="/products.html" class="sectionTitle text-white fw-bold d-block position-relative"
+                                data-currentLangeuage="en" data-enText="Products" data-arText="المنتجات">Products</a>
+                        </li>
+                        <li><a href="/contact.html" class="sectionTitle text-white fw-bold d-block position-relative"
+                                data-currentLangeuage="en" data-enText="Contact" data-arText="التواصل">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-right text-white mt-5">
+                    <a href="/login.html" class="text-white d-block position-relative" data-currentLangeuage="en"
+                        data-enText="Login" data-arText="التسجيل الدخول">Login</a>
+                    <p class="textOrange">services@spotcode.net</p>
+                    <p class="textOrange">+963 993277655</p>
+                    <p class="textOrange">syria , Damascus</p>
+                    <ul class="social-media list-unstyled mt-4">
+                        <li><a href="https://www.facebook.com/profile.php?id=100095150770088&notif_id=1690595498692617&notif_t=page_user_activity&ref=notif"
+                                class="text-white">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/spotcode8/" class="text-white">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="line"></div>
+    <button id="gototop">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-up"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+        </svg>
+    </button>
+
+
+
+    <div class="back-text-animation">
+        <h1 class="ml3">Spotcode</h1>
+    </div>
+
+
+
+    <header class="position-relative blackSection overflow-hidden d-grid" style="place-content: center;">
+        <img class="fly-image fly-image2 position-absolute d-sm-block d-none " style="top: 20%; left: 20px;"
+            src="/imgs/imagecompressor/Stars1.png" alt="back image">
+        <img class="fly-image fly-image2 position-absolute" style="top: 80%; right: 20px;"
+            src="/imgs/imagecompressor/footerStars.png" alt="back image">
+        <div class="container ">
+            <div class="row position-relative z-1  gap-4 gap-lg-0">
+                <div class=" col-lg-7 col-12 order-lg-0 order-1 py-3 pt-0" data-aos="fade-right">
+
+                    <h1 class=" textOrange mb-4 fw-bold" data-currentLangeuage="en"
+                        data-enText="programming Basics" data-arText="أساسيات البرمجة">programming Basics
+                    </h1>
+                    <div class="course-introducer-box d-flex gap-4 mb-4">
+                        <img width="200" height="200" class="introducer-img object-fit-cover" src="/imgs/imagecompressor/kareem.jpeg"
+                            alt="">
+                        <div>
+                            <h5 class="introducer-name text-white mb-0 " data-currentLangeuage="en"
+                                data-enText="By Kareem Safar" data-arText="من كريم صفر">By Kareem Safar</h5>
+                            <ul class="introducer-rate d-flex gap-1 m-0 list-unstyled">
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                    </svg></li>
+                            </ul>
+                            <p class="text-white" data-currentLangeuage="en"
+                                data-enText="Duration : 4 weeks (+15 hours)"
+                                data-arText="المدة : اربعة اسابيع (+15 ساعة)">Duration : 4 weeks (+15 hours)</p>
+                            <p class="text-white" data-currentLangeuage="en" data-enText="Rates : +64"
+                                data-arText="التقيم : +64">
+                                Rates : +64</p>
+
+                        </div>
+                    </div>
+                    <p class="text-white mb-3" data-currentLangeuage="en"
+                        data-enText="Enroll now in our Programming Basics course to master the essential foundations of coding. From beginner to expert, you'll acquire the fundamental skills needed to excel in programming. Dive into basic coding analysis, perform medium-scale applications resembling real-world scenarios, and develop an intermediate proficiency in the Python programming language."
+                        data-arText="قم بالتسجيل الآن في دورة أساسيات البرمجة لدينا لإتقان الأسس الأساسية للبرمجة. من المبتدئ إلى الخبير، ستكتسب المهارات الأساسية اللازمة للتفوق في البرمجة. انغمس في تحليل الترميز الأساسي، وقم بإجراء تطبيقات متوسطة الحجم تشبه سيناريوهات العالم الحقيقي، وقم بتطوير كفاءة متوسطة في لغة برمجة بايثون. ">
+                        Enroll now in our Programming Basics course to master the essential foundations of coding. From beginner to expert, you'll acquire the fundamental skills needed to excel in programming. Dive into basic coding analysis, perform medium-scale applications resembling real-world scenarios, and develop an intermediate proficiency in the Python programming language.   </p>
+
+                    <p class="text-white mb-3" data-currentLangeuage="en"
+                        data-enText="By the end of this course, learners will have the ability to conduct basic coding analysis and make revisions effectively. You will be equipped to create medium-scale applications that simulate real-world scenarios, giving you practical experience in coding. Additionally, you will gain an intermediate level of expertise in Python programming, enabling you to explore and expand into other programming domains with confidence. Develop a deep understanding of programming concepts and principles, setting a strong foundation for your future programming endeavors."
+                        data-arText="بنهاية هذه الدورة، سيكون لدى المتعلمين القدرة على إجراء تحليل الترميز الأساسي وإجراء المراجعات بشكل فعال. ستكون مجهزًا لإنشاء تطبيقات متوسطة الحجم تحاكي سيناريوهات العالم الحقيقي، مما يمنحك خبرة عملية في البرمجة. بالإضافة إلى ذلك، ستكتسب مستوى متوسطًا من الخبرة في برمجة بايثون مما يتيح لك الاستكشاف والتوسع في مجالات البرمجة الأخرى بثقة. تطوير فهم عميق لمفاهيم ومبادئ البرمجة، ووضع أساس قوي لمساعيك البرمجية المستقبلية.">
+                        By the end of this course, learners will have the ability to conduct basic coding analysis and make revisions effectively. You will be equipped to create medium-scale applications that simulate real-world scenarios, giving you practical experience in coding. Additionally, you will gain an intermediate level of expertise in Python programming, enabling you to explore and expand into other programming domains with confidence. Develop a deep understanding of programming concepts and principles, setting a strong foundation for your future programming endeavors.</p>
+                    <p class="text-white" data-currentLangeuage="en"
+                        data-enText="Join our team , available seats are limited number."
+                        data-arText="انضم لفريقنا، المقاعد المتوفرة محدودة.">Join our team , available seats are limited
+                        number.</p>
+                    <p class=" mt-2" data-currentLangeuage="en" data-enText="Price : 150k sp"
+                        data-arText="السعر : 150 الف ليرة سورية" style="color: greenyellow;">Price : 150k sp</p>
+
+
+
+
+                    <h1 class="text-white mt-5" data-currentLangeuage="en"
+                        data-enText="How do i register for the course?" data-arText="كيف أسجل في الدورة؟">How do i
+                        register for the course?</h1>
+                    <p class="text-white mt-4" data-currentLangeuage="en" data-enText="To stay updated on the latest news and receive notifications about our upcoming
+                courses, simply join our
+                WhatsApp group. At a designated time, group members will receive a message detailing the courses
+                schedule, location, and start date. Additionally, we will conduct a poll to determine the preferred
+                timing for the course during Ramadan. Join us on WhatsApp to stay informed and participate in shaping
+                our upcoming programming course. Hurry , seats are limited and the courses will start very soon."
+                        data-arText="للبقاء على اطلاع على آخر الأخبار وتلقي الإخطارات حول موقعنا القادم
+                الدورات، ببساطة انضم إلينا
+                مجموعة الواتساب. في وقت محدد، سيتلقى أعضاء المجموعة رسالة تحتوي على تفاصيل الدورات
+                الجدول الزمني والموقع وتاريخ البدء. بالإضافة إلى ذلك، سنقوم بإجراء استطلاع لتحديد الأفضل
+                توقيت الدورة خلال شهر رمضان . انضم إلينا على الواتساب للبقاء على اطلاع والمشاركة في التشكيل
+                دورة البرمجة القادمة لدينا. سارعوا فالمقاعد محدودة وستبدأ الدورات قريبا جدا."> To stay updated on the
+                        latest news and receive notifications about our upcoming
+
+                        courses, simply join our
+                        WhatsApp group. At a designated time, group members will receive a message detailing the courses
+                        schedule, location, and start date. Additionally, we will conduct a poll to determine the
+                        preferred
+                        timing for the course during Ramadan. Join us on WhatsApp to stay informed and participate in
+                        shaping
+                        our upcoming programming course. Hurry , seats are limited and the courses will start very soon.
+                    </p>
+
+
+                    <p data-currentLangeuage="en" data-enText="Use the barcode or click on the link to join the group."
+                        data-arText="استخدم الباركود أو انقر على الرابط للانضمام إلى المجموعة." class="text-white mt-4">
+                        Use the
+                        barcode or click on the link to join the group.</p>
+                    <p data-currentLangeuage="en" data-enText="Open WhatsApp and take a shot using the camera. It will directly take you to the
+                group. Join now!" data-arText="افتح تطبيق واتساب والتقط صورة باستخدام الكاميرا. سوف يأخذك مباشرة إلى
+                مجموعة. نضم الان!" class=" text-white mb-4">Open WhatsApp and take a shot using the camera. It will
+                        directly take you to the
+                        group. Join now!</p>
+                    <div class="d-flex justify-content-start gap-5 flex-sm-nowrap flex-wrap">
+                        <img src="/imgs/imagecompressor/whatsappbarcode.jpeg" width="240" height="240" alt="">
+                        <div class="mt-2 ">
+                            <h6 class="text-white" data-currentLangeuage="en"
+                                data-enText="Or use the link below to join the group."
+                                data-arText="أو استخدم الرابط أدناه للانضمام إلى المجموعة">Or use the link below to join
+                                the
+                                group.</h6>
+                            <a href="https://chat.whatsapp.com/Lqxl1qibqaQ5kC0wAUtooC" class="my-2 d-block">WHATSAPP</a>
+                            <h6 data-currentLangeuage="en" data-enText="Contact us if you have any questions."
+                                data-arText="تواصل معنا إذا كان عندك أي أسئلة." class="text-white">Contact us if you
+                                have any
+                                questions.</h6>
+                            <p class="textOrange">+963 993 277 655</p>
+                            <p class="textOrange">+963 965 560 905</p>
+                        </div>
+                    </div>
+
+
+
+                    <h3 class="mt-5 text-white" data-currentLangeuage="en" data-enText="Comments(3)"
+                        data-arText="التعليقات(3)">Comments(3)</h3>
+                    <div class="comments  text-white d-flex flex-column gap-5 m-4">
+                        <div class="comment d-flex align-items-center gap-3">
+                            <img width="50" class="" height="50" src="/imgs/imagecompressor/logoOrange.png" alt=""
+                                class="image-profile object-fit-cover">
+                            <div class="comment-content ">
+                                <div class="comment-details d-flex justify-content-between mb-2">
+                                    <h6 class="m-0">Moazz_la</h6>
+                                    <h6 class="m-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                                            class="bi bi-calendar me-1 mb-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                        </svg>
+                                        2023/11/2
+                                    </h6>
+                                </div>
+                                <div class="comment-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, pariatur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment d-flex align-items-center gap-3">
+                            <img width="50" class="" height="50" src="/imgs/imagecompressor/logoOrange.png" alt=""
+                                class="image-profile object-fit-cover">
+                            <div class="comment-content ">
+                                <div class="comment-details d-flex justify-content-between mb-2">
+                                    <h6 class="m-0">TTarek</h6>
+                                    <h6 class="m-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                                            class="bi bi-calendar me-1 mb-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                        </svg>
+                                        2023/11/15
+                                    </h6>
+                                </div>
+                                <div class="comment-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, pariatur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment d-flex align-items-center gap-3">
+                            <img width="50" class="" height="50" src="/imgs/imagecompressor/logoOrange.png" alt=""
+                                class="image-profile object-fit-cover">
+                            <div class="comment-content ">
+                                <div class="comment-details d-flex justify-content-between mb-2">
+                                    <h6 class="m-0">Lama sh</h6>
+                                    <h6 class="m-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                                            class="bi bi-calendar me-1 mb-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                                        </svg>
+                                        2023/11/23
+                                    </h6>
+                                </div>
+                                <div class="comment-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, pariatur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="" class="d-flex gap-3">
+                            <input class="w-100 p-2 px-3 bg-transparent" required type="text"
+                                placeholder="Enter your comment">
+                            <button class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="white" class="bi bi-send" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
+                                </svg></button>
+                        </form>
+                    </div>
+
+
+
+                    <h5 class="my-4 d-lg-none d-block text-white mt-5" data-currentLangeuage="en" data-enText="See more"
+                        data-arText="المزيد">See more</h5>
+                    <div class="row d-lg-none gap-5 d-flex justify-content-center flex-md-nowrap flex-wrap mb-5">
+                        <div class="col-md-6 col-10">
+                            <a class="suggets-img" href="/courses pages/frontendCourse.html">
+                                <img class="w-100 h-100 object-fit-cover" src="/imgs/imagecompressor/feCourse-min.png"
+                                    alt="suggested product image">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-10">
+                            <a class="suggets-img" href="/courses pages/jsCourse.html">
+                                <img class="w-100 h-100 object-fit-cover" src="/imgs/imagecompressor/jsCourse-min.png"
+                                    alt="suggested product image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row d-lg-none gap-5 d-flex justify-content-center flex-md-nowrap flex-wrap mb-5">
+                        <div class="col-md-6 col-10">
+                            <a class="suggets-img" href="/courses pages/backendCourse.html">
+                                <img class="w-100 h-100 object-fit-cover" src="/imgs/imagecompressor/beposter-min.png"
+                                    alt="suggested product image">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-10">
+                            <a class="suggets-img" href="/courses pages/aiCourse.html">
+                                <img class="w-100 h-100 object-fit-cover" src="/imgs/imagecompressor/aiCourse-min.png"
+                                    alt="suggested product image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row d-lg-none  d-flex justify-content-md-start justify-content-center">
+                        <div class="col-md-6 col-10">
+                            <a class="suggets-img" href="/courses pages/mobileCourse.html">
+                                <img class="w-100 h-100 object-fit-cover" src="/imgs/imagecompressor/mCourse-min.png"
+                                    alt="suggested product image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-lg-1 order-0 col-10 " data-aos="fade-left" data-aos-delay="1000">
+                    <div class="box position-relative">
+                        <img src="/imgs/imagecompressor/pbcourse-min.png" class="object-fit-cover" style="object-position: center;"
+                            alt="products header imge">
+                    </div>
+                    <h5 class="my-4 d-lg-block d-none text-white mt-5" data-currentLangeuage="en" data-enText="See more"
+                        data-arText="المزيد">See more</h5>
+                    <div class="row d-lg-flex d-none justify-content-center flex-md-nowrap flex-wrap mb-4">
+                        <div class="col">
+                            <a class="suggets-img" href="/courses pages/frontendCourse.html">
+                                <img class="w-100 h-100 object-fit-cover" src="/imgs/imagecompressor/feCourse-min.png"
+                                    alt="suggested product image">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="suggets-img" href="/courses pages/jsCourse.html">
+                                <img class="w-100 h-100 object-fit-cover" src="/imgs/imagecompressor/jsCourse-min.png"
+                                    alt="suggested product image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row d-lg-flex d-none justify-content-center flex-md-nowrap flex-wrap mb-4">
+                        <div class="col">
+                            <a class="suggets-img" href="/courses pages/backendCourse.html">
+                                <img class="w-100 h-100 object-fit-cover" src="/imgs/imagecompressor/beposter-min.png"
+                                    alt="suggested product image">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a class="suggets-img" href="/courses pages/aiCourse.html">
+                                <img class="w-100 h-100 object-fit-cover" src="/imgs/imagecompressor/aiCourse-min.png"
+                                    alt="suggested product image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row d-lg-flex d-none justify-content-start flex-md-nowrap flex-wrap mb-4">
+                        <div class="col-6 ">
+                            <a class="suggets-img" href="/courses pages/mobileCourse.html">
+                                <img class="w-100 h-100 object-fit-cover" src="/imgs/imagecompressor/mCourse-min.png"
+                                    alt="suggested product image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="position-relative">
+        <div class="news-line bg-orange py-2 overflow-hidden d-md-block d-none">
+            <div class="news-p text-white position-relative d-flex justify-content-around gap-3">
+                <p data-currentLangeuage="en" data-enText="we don’t just do projects, we partner with product owners"
+                    data-arText="نحن لا نقوم فقط بالمشاريع، بل نتشارك مع أصحاب المنتجات">we don’t just do projects, we
+                    partner with product owners</p>
+                <p data-currentLangeuage="en"
+                    data-enText="Since our clients stay with us for so long, we must be doing things right"
+                    data-arText="نظرًا لأن عملائنا يبقون معنا لفترة طويلة، فيجب علينا القيام بالأمور بشكل صحيح">Since
+                    our clients stay with us for so long, we must be doing things right</p>
+            </div>
+        </div>
+        <div class="container position-relative">
+            <div class="row align-items-center justify-content-center  flex-wrap" style="min-height: 260px;">
+                <div class="col-md-6 col-10">
+                    <div class="rows d-flex justify-content-center gap-5">
+                        <div class="left">
+                            <h3 class="text-white fw-bold" data-currentLangeuage="en" data-enText="Reach Us"
+                                data-arText="اتصل بنا">Reach Us</h3>
+                            <p class="mt-4 textOrange">services@spotcode.net</p>
+                            <p class="textOrange">+963 993277655</p>
+                        </div>
+                        <div class="right">
+                            <h3 class="text-white fw-bold" data-currentLangeuage="en" data-enText="Follow Us"
+                                data-arText="تابعنا">Follow Us</h3>
+                            <a href="https://www.facebook.com/profile.php?id=100095150770088&notif_id=1690595498692617&notif_t=page_user_activity&ref=notif"
+                                class="text-white mt-4  textOrange d-block">Facebook</a>
+                            <a href="https://www.instagram.com/spotcode8/" class="text-white textOrange">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-10 ps-lg-5">
+                    <h3 class="fw-bold" data-currentLangeuage="en" data-enText="Explore" data-arText="أكتشف">Explore
+                    </h3>
+                    <ul class="list-unstyled d-flex gap-4 mt-4 mb-0">
+                        <li><a href="projects.html" data-currentLangeuage="en" data-enText="Projects"
+                                data-arText="المشاريع">Projects</a></li>
+                        <li><a href="contact.html" data-currentLangeuage="en" data-enText="Contact"
+                                data-arText="التواصل">Contact</a></li>
+                    </ul>
+                    <p data-currentLangeuage="en" data-enText="Damascus , syria" data-arText="دمشق , سوريا">Damascus
+                        ,syria</p>
+                </div>
+            </div>
+        </div>
+        <img loading="lazy" src="/imgs/imagecompressor/footerStars.png" class="position-absolute stars"
+            style="width: 150px;right: 40px; top:100px; z-index: index 1;;" alt="SpotCode footer">
+        <img loading="lazy" src="/imgs/imagecompressor/FooterCircle.png" class="position-absolute bottom-0"
+            style="width: 150px;" alt="SpotCode footer">
+        <div class="position-absolute bottom-0 d-flex gap-4 text-white" style="left: 20%;">
+            <a class="textGray" style="font-size: .7rem;" href="privcay.html">Privacy</a>
+            <p class="textGray" style="font-size: .7rem;" href="">CopyRight&copy;2023</p>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+
+<script src="../js/base.js"></script>
+<script src="../js/translate.js"></script>
+<script>
+    let loginButton = document.querySelector(".comments button")
+    loginButton.onclick = (e) => {
+        e.preventDefault()
+        console.log('te')
+        window.location.href = 'https://www.spotcode.net/login.html'
+    }
+</script>
+
+
+<!--^ Aos library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // AOS.init();
+    AOS.init({ disable: 'mobile', once: true });
+</script>
+
+
+
+
+</html>

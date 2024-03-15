@@ -212,7 +212,7 @@ section.tow ul li{
 
 section.three {
     min-height: 100vh;
-    padding: var(--SectionPadding) 10px 0;
+    padding: var(--SectionPadding) 10px ;
 
 }
 

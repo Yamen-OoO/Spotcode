@@ -1,4 +1,7 @@
 
+*{
+    /* outline: 1px solid red; */
+}
 header {
     min-height: 100vh;
     padding: var(--SectionPadding) 10px;

@@ -164,6 +164,17 @@ body {
     height: fit-content;
 }
 
+.languages button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+.languages .active {
+    color: var(--OrangeText);
+}
+
 
 
 
@@ -273,6 +284,7 @@ nav .menu-left-word {
 
 footer {
     min-height: fit-content;
+    background-color: white;
 }
 
 footer .news-line {
