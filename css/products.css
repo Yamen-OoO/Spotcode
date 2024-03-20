@@ -45,7 +45,7 @@ header .box::before{
     height: 100%;
     left: 50px ;
     top: 50px;
-    background-image: url(/imgs/productsHeader1.jpg);
+    background-image: url(/imgs/imagecompressor/productsHeader1.jpg);
     background-size: cover;
     border: 1px solid var(--OrangeText);
 
@@ -54,7 +54,7 @@ header .box::before{
     position: absolute;
     width: 40px;
     height: 40px;
-    background-image: url(/imgs/tringlesmallwhite.png);
+    background-image: url(/imgs/imagecompressor/tringlesmallwhite.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@ header .box::before{
     position: absolute;
     width: 60px;
     height: 60px;
-    background-image: url(/imgs/tringlesmall.png);
+    background-image: url(/imgs/imagecompressor/tringlesmall.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

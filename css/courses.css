@@ -67,7 +67,7 @@ body {
 header {
     min-height: 100vh;
     padding: var(--SectionPadding) 10px;
-    background-image: url(../imgs/courses.jpg);
+    background-image: url(../imgs/imagecompressor/courses.jpg);
     background-size: cover;
     background-position: center;
     /* color: black; */

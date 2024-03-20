@@ -1,6 +1,5 @@
 let tringlesNumber = 50
 let sections = document.querySelectorAll('.sec')
-console.log(sections)
 sections.forEach((sec , j) => {
     tringlesNumber = 10
     if(j === 2)  tringlesNumber = 30

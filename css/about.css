@@ -5,7 +5,7 @@
 header {
     min-height: 100vh;
     padding: var(--SectionPadding) 10px;
-    background-image: url(../imgs/aboutbackground.jpg);
+    background-image: url(../imgs/imagecompressor/aboutbackground-min.jpg);
     background-size: cover;
 
 
