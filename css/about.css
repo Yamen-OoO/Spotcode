@@ -311,7 +311,7 @@ img:not(.fly-image) {
 
     section .introimg:nth-child(2) {
         max-width: 350px;
-        height: 300px;
+        height: 200px;
         width: 100%;
     }
 
@@ -322,16 +322,3 @@ img:not(.fly-image) {
     }
 }
 
-@media (max-width:666px) {
-    .ball1 {
-        width: 20px;
-        height: 20px;
-    }
-
-    .ball2 {
-        width: 30px;
-        height: 30px;
-    }
-
-
-}
