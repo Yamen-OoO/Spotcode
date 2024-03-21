@@ -31,12 +31,17 @@ header a.suggets-img{
     box-shadow: 0 2px 5px var(--OrangeText);
 }
 
+
+
 header ul{
     /* list-style: none; */
 }
 header ul li{
     margin: 5px 0;
     color: white;
+}
+.course-introducer-box img{
+    filter: grayscale(1);
 }
 
 .demo-button{
@@ -52,6 +57,10 @@ header ul li{
 }
 .comments .comment h6{
     color: gray;
+}
+.comments .comment-content {
+    max-width: 600px;
+    width: 100%;
 }
 .comments input{
     outline: none;
