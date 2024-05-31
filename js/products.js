@@ -12,7 +12,7 @@ sections.forEach((sec , j) => {
             tringle.classList.add("triangle2")
         }
 
-        tringle.style.left = Math.floor(Math.random() * 90) + "%"
+        tringle.style.left = Math.floor(Math.random() * 80) + "%"
         tringle.style.top = Math.floor(Math.random() * 90) + "%"
         sec.appendChild(tringle)
         window.addEventListener('scroll', function () {
