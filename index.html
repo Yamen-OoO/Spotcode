@@ -43,7 +43,7 @@
         </svg>
     </button>
 
-    <nav class="position-fixed w-100" data-aos="fade-down" fade-aos-delay="300">
+    <nav style="z-index: 100;" class="position-fixed w-100" data-aos="fade-down" fade-aos-delay="300">
         <div class="container position-relative d-flex justify-content-between align-items-center py-0 z-3">
             <div class="logo fw-bold">
                 <a href="/">
@@ -111,6 +111,9 @@
 
 
 
+
+
+
     <header class="position-relative blackSection overflow-hidden">
         <div class="container">
             <div class="box position-relative text-white  py-3 mt-0 col-12 col-lg-9" data-aos="fade-right"
@@ -135,10 +138,66 @@
         </div>
     </header>
 
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content px-2">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalToggleLabel">New Updates</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
 
-    <section class="one position-relative whiteSection">
+                    <div class="image">
+                        <img class="w-100 object-fit-cover" src="./imgs/imagecompressor/updates1-min.png" alt="popup update image">
+                    </div>
+                    <div class="pt-3">
+                        <h3 class="mb-3 textOrange">Client Panel Updates: </h3>
+                        <p>We've implemented a range of improvements, including a refined UI for increased usability,
+                            light and dark mode options for personalized viewing, and the ability to easily extract data
+                            into Excel spreadsheets for seamless analysis.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">NEXT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content px-2">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalToggleLabel2">New Updates</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="image">
+                        <img class="w-100 object-fit-cover" src="./imgs/imagecompressor/updates2-min.png" alt="popup update image">
+                    </div>
+                    <div class="pt-3">
+                        <h3 class="mb-3 textOrange">Social Media Marketing & Content Creation Services :</h3>
+                        <p>We've expanded our offerings to include social media marketing and content creation, giving
+                            you a complete solution for your brand's online presence.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">go back</button>
+                    <button type="button" class="btn border-0 px-3 py-2 ms-2" data-bs-dismiss="modal"
+                        aria-label="Close">End</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button style="display: none;" class="btn open-updates" data-bs-target="#exampleModalToggle"
+        data-bs-toggle="modal">Open first
+        modal</button>
+
+
+    <section class="one position-relative whiteSection mt-5">
         <div class="container">
-            <div class="box position-relative overflow-hidden d-grid ">
+            <div class="box position-relative d-grid ">
                 <div class="text-left">
                     <p class="fade-outToLeft">we put a lot of emphasis on getting your web app to market as quickly as
                         possible while still respecting your time.</p>
@@ -147,20 +206,28 @@
                     <p class="fade-outToRight">Quicken The pace of web app development Timing is crucial in technology,
                         but that is something you already know.</p>
                 </div>
+                <div class="laptopphone-image">
+                    <img class="w-100 h-100 object-fit-contain" src="./imgs/imagecompressor/laptopphone.gif" alt="">
+                </div>
             </div>
         </div>
-        <div
-            class="orange-box w-100 text-white overflow-hidden fade-orangeBoxToLeft bg-orange text-white position-relative">
+        <div class="orange-box w-100 text-white fade-orangeBoxToLeft bg-orange text-white position-relative">
+
             <div class="container">
                 <p class="w-100 fade-outOpacity">Our Goal to create durable digital products, we're able to prevent
                     surprises and consistently produce the best quality software beacuse we're pragmatic product
                     specialists with a focused area of experti</p>
             </div>
         </div>
-        <img loading="lazy" src="/imgs/imagecompressor/Stars2.png" class="position-absolute stars2 rellax"
-            data-rellax-speed="2" alt="SpotCode">
-        <img loading=" lazy" src="/imgs/imagecompressor/Stars3.png" class="position-absolute stars3 rellax"
-            data-rellax-speed="2" alt="SpotCode">
+
+
+
+
+
+        <img loading="lazy" src="/imgs/imagecompressor/Stars2.png"
+            class="position-absolute stars2 rellax d-md-block d-none" data-rellax-speed="2" alt="SpotCode">
+        <img loading=" lazy" src="/imgs/imagecompressor/Stars3.png"
+            class="position-absolute stars3 rellax d-md-block d-none" data-rellax-speed="2" alt="SpotCode">
         <div class=" circle position-absolute bg-orange rounded-circle rellax" data-rellax-speed="2"></div>
 
     </section>
@@ -176,6 +243,7 @@
                         <li class="sectionTitle2 text-white one mb-2">UI & UX</li>
                         <li class="sectionTitle2 text-white tow mb-2">Web Applications</li>
                         <li class="sectionTitle2 text-white three mb-2">Mobile Apps</li>
+                        <li class="sectionTitle2 text-white four mb-2">Marketing</li>
                         <!-- <li class="sectionTitle2 text-white four mb-2">Game Development</li> -->
                     </ul>
                 </div>
@@ -186,6 +254,123 @@
                 </div>
             </div>
     </section>
+
+    <section class="tow-2 why-us blackSection">
+        <div class="back-words">
+            <!-- <h1 style="font-size:1.5rem ; font-weight: bold;">INCREASE</h1> -->
+            <!-- <h1 style="font-size:3rem ; font-weight: bold;">DEVELOPMENT</h4> -->
+            <h1>EVOLUTION</h1>
+            <h1>GROWTH</h1>
+        </div>
+        <div class="container">
+            <div class="row justify-content-between gap-lg-0 gap-5 text-white">
+                <div class="col-lg-3 col-12 text-white">
+                    <div class="mb-2">
+                        <img class="me-1" width="20" height="20" src="./imgs/imagecompressor/logo.png" alt="">
+                        <span>Advantageous services</span>
+                    </div>
+                    <h1>WHY US</h1>
+                </div>
+                <div class="col-lg-9 col-12">
+                    <div class="row gap-md-0 gap-5 mb-5" data-aos="fade-right">
+                        <div class="col-10 col-md-4 ">
+                            <div class="icon-container ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                    class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707m0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707m-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707" />
+                                </svg>
+                            </div>
+                            <hr />
+                            <h4>Scalability</h4>
+                            <p>We can adapt to your growing needs, whether you're a startup or an established company.
+                            </p>
+
+                        </div>
+                        <div class="col-10 col-md-4 ">
+                            <div class="icon-container ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                    class="bi bi-card-checklist" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z" />
+                                    <path
+                                        d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </div>
+                            <hr />
+                            <h4>Cost-Effective</h4>
+                            <p>We offer competitive pricing and transparent billing, so you know exactly what you're
+                                paying for.</p>
+                        </div>
+                        <div class="col-10 col-md-4 ">
+                            <div class="icon-container ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                    class="bi bi-shield-check" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+                                    <path
+                                        d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </div>
+                            <hr />
+                            <h4>Security Focused</h4>
+                            <p>We prioritize the security of your data and systems with robust security measures.</p>
+                        </div>
+                    </div>
+                    <div class="row gap-md-0 gap-5" data-aos="fade-right">
+                        <div class="col-10 col-md-4 ">
+                            <div class="icon-container ">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                    class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
+                                    <path
+                                        d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0M2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                            </div>
+                            <hr />
+                            <h4>Data-Driven Decisions</h4>
+                            <p>We use data analytics and insights to inform our strategies, ensuring your project is
+                                driven by results, not assumptions. </p>
+                        </div>
+                        <div class="col-10 col-md-4 ">
+                            <div class="icon-container ">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                    class="bi bi-lightning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641zM6.374 1 4.168 8.5H7.5a.5.5 0 0 1 .478.647L6.78 13.04 11.478 7H8a.5.5 0 0 1-.474-.658L9.306 1z" />
+                                </svg>
+                            </div>
+                            <hr />
+                            <h4>Passion for Technology</h4>
+                            <p>We're passionate about using technology to solve problems and create amazing experiences.
+                            </p>
+                        </div>
+                        <div class="col-10 col-md-4 ">
+                            <div class="icon-container ">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                    class="bi bi-headset" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5" />
+                                </svg>
+                            </div>
+                            <hr />
+                            <h4>24/7 Support</h4>
+                            <p>We're committed to providing customers with exceptional support, available whenever they
+                                need it.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <section class="three position-relative whiteSection overflow-hidden">
         <div class="container-lg container-fluid">
@@ -198,14 +383,14 @@
                         </p>
                     </div>
                     <img loading="lazy" src="/imgs/imagecompressor/labtop1-min.png" class="position-relative rellax"
-                        style="top: 900px; max-width: 550px;left: -70px; width: 100%;height: 300px;"
-                        data-rellax-speed="3" alt="SpotCode company">
+                        style="top: 800px; max-width: 550px;left: -70px; width: 100%;height: 300px;"
+                        data-rellax-speed="2" alt="SpotCode company">
                 </div>
 
-                <div class="box d-flex align-items-center">
+                <div class="box d-flex align-items-center justify-content-end">
                     <img loading="lazy" src="/imgs/imagecompressor/labtop2-min.png" class="position-relative rellax"
-                        style="top: 1100px; max-width: 550px;left: 70px; width: 100%;height: 300px;"
-                        data-rellax-speed="3" alt="SpotCode services">
+                        style="top: 700px; max-width: 550px;left: 70px; width: 100%;height: 300px;"
+                        data-rellax-speed="2" alt="SpotCode services">
                     <div class="pe-5" style="z-index: 1;">
                         <p class="tow sectionTitle2  text-end fade-outToRight ">
                             Simplify complex processes and enhance efficiency with our user-friendly applications, also

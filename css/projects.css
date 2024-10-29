@@ -1,8 +1,9 @@
-header{
+header {
     min-height: 100vh;
     padding: var(--SectionPadding) 10px;
     background-color: var(--BlackBackground);
 }
+
 header .box {
     z-index: 1;
 }
@@ -10,18 +11,43 @@ header .box {
 header .box p:first-child {
     letter-spacing: 8px;
 }
-header img.stars{
+
+header a {
+    padding: 10px;
+    width: 150px;
+}
+
+header a::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 7px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--BlackTransparent);
+    z-index: -1;
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+header a:hover::before {
+    border-radius: 0px;
+    width: 95px;
+}
+
+header img.stars {
     position: absolute;
     left: 20px;
     top: 260px;
     width: 150px;
 }
-header .arrow{
+
+header .arrow {
     bottom: 10px;
     left: 100px;
 }
 
-header .pyramid{
+header .pyramid {
     position: absolute;
     overflow: hidden;
     right: 0;
@@ -30,7 +56,8 @@ header .pyramid{
     width: 70%;
     /* background-color: red; */
 }
-header .pyramid .pyramid-piece{
+
+header .pyramid .pyramid-piece {
     position: absolute;
     width: 100%;
     height: 50px;
@@ -38,15 +65,18 @@ header .pyramid .pyramid-piece{
     border-bottom: none;
     border-right: none;
 }
-header .pyramid .animate{
-    animation:add 1s ease-in;
+
+header .pyramid .animate {
+    animation: add 1s ease-in;
     animation-duration: 1s;
 }
+
 @keyframes add {
-    0%{ 
+    0% {
         left: 100%;
     }
-    100%{
+
+    100% {
         left: attr(data-left);
     }
 }
@@ -61,7 +91,7 @@ header .pyramid .animate{
 } */
 
 
-section.one{
+section.one {
     padding: var(--SectionPadding) 10px 0px;
     position: relative;
     min-height: 100vh;
@@ -74,6 +104,7 @@ section.one img.stars2 {
     right: 5%;
     z-index: -1;
 }
+
 section.one img.stars5 {
     position: absolute;
     z-index: -1;
@@ -81,12 +112,14 @@ section.one img.stars5 {
     height: 200px;
     left: -100px;
 }
-section.one img.rectangle{
+
+section.one img.rectangle {
     position: absolute;
     bottom: 0;
     left: 0;
 }
-.box-bigword{
+
+.box-bigword {
     position: absolute;
     top: 400px;
     left: 50%;
@@ -96,53 +129,188 @@ section.one img.rectangle{
     height: 70%;
     z-index: 1;
 }
-.box-bigword div{
+
+.box-bigword div {
     top: 16%;
     position: sticky;
 }
-.box-bigword div h1{
+
+.box-bigword div h1 {
     font-size: 7rem;
 }
 
 
 
 
-.project-img{
-    max-width:380px;
+.project-img {
+    max-width: 380px;
     width: 100%;
     height: 440px;
     transition: .5s ease;
 }
-.project-img-small{
-    max-width:300px;
+
+.project-img-small {
+    max-width: 300px;
     width: 100%;
     height: 390px;
     transition: .5s ease;
 }
-.project-img:hover{
+
+.project-img:hover {
     /* transform: translateZ(-20px); */
 }
-.projects-row{
+
+.projects-row {
     margin-bottom: 200px;
     /* background-color: gold; */
     flex-wrap: nowrap;
 }
 
 
+.tow-1 {
+    padding: 20px 10px 100px;
+    min-height: fit-content;
+    /* background-color: red; */
+}
+
+.tow-1 .Img-container {
+    box-shadow: -5px 10px 5px var(--OrangeTransparenBackgournd);
+}
+
+.tow-1 .Img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.tow-1 .Img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.tow-1 .logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: .6px solid rgba(0, 0, 0, 0.307);
+    background-size: cover;
+    z-index: 111;
+}
+
+@media (max-width:970px) {
+    .tow-1 .logo {
+        display: none;
+
+    }
+
+}
+
+.tow-1 .logo-1 {
+    background-image: url("../imgs/imagecompressor/logo1.png");
+    animation: logo1 5s linear infinite;
+}
+
+.tow-1 .logo-2 {
+    background-image: url("../imgs/imagecompressor/logo2.png");
+    animation: logo2 5s linear infinite;
+}
+
+.tow-1 .logo-3 {
+    background-image: url("../imgs/imagecompressor/logo3.png");
+    animation: logo3 5s linear infinite;
+
+}
+
+.tow-1 .logo-4 {
+    background-image: url("../imgs/imagecompressor/logo4.png");
+    animation: logo4 5s linear infinite;
+}
+
+@keyframes logo1 {
+    0% {
+        left: 100px;
+        top: 50px;
+    }
+
+    50% {
+        left: 120px;
+        top: 50px;
+    }
+
+    100% {
+        left: 100px;
+        top: 50px;
+
+    }
+}
+
+@keyframes logo2 {
+    0% {
+        right: 10px;
+        top: 10px;
+        ;
+    }
+
+    50% {
+        right: 30px;
+        top: 30px;
+        ;
+    }
+
+    100% {
+        right: 10px;
+        top: 10px;
+        ;
+
+    }
+}
+
+@keyframes logo3 {
+    0% {
+        left: 0px;
+        bottom: 200px;
+    }
+
+    50% {
+        left: 20px;
+        bottom: 220px;
+    }
+
+    100% {
+        left: 00px;
+        bottom: 200px;
+
+    }
+}
+
+@keyframes logo4 {
+    0% {
+        right: 400px;
+        bottom: 60px;
+    }
+
+    50% {
+        right: 430px;
+        bottom: 60px;
+    }
+
+    100% {
+        right: 400px;
+        bottom: 60px;
+
+    }
+}
 
 
 
 
-
-
-
-
-
-section.tow{
+section.tow {
     padding: 20px 10px 50px;
     min-height: fit-content;
 }
-section.tow::before{
+
+section.tow::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -150,19 +318,22 @@ section.tow::before{
     bottom: 0;
     left: 0;
     z-index: -1;
-    background-color:#D4D4D4;
+    background-color: #D4D4D4;
 
 }
-section.tow .Img-container{
+
+section.tow .Img-container {
     position: relative;
     /* background-color: yellow; */
     max-width: 400px;
     width: 100%;
 }
-section.tow .projectSec2Img{
+
+section.tow .projectSec2Img {
     width: 100%;
 }
-section.tow .Img-container::before{
+
+section.tow .Img-container::before {
     width: 100%;
     height: 100%;
     content: '';
@@ -170,24 +341,27 @@ section.tow .Img-container::before{
     left: 20px;
     bottom: 20px;
     z-index: -1;
-    background-color:#ff8945;
+    background-color: #ff8945;
 }
 
-section.three{
-    background-color:#D4D4D4;
+section.three {
+    background-color: #D4D4D4;
     padding: 30px 10px;
     border-bottom: 1px solid #D4D4D4;
 }
-section.three .Img-container{
+
+section.three .Img-container {
     position: relative;
     /* background-color: yellow; */
     max-width: 600px;
     width: 100%;
 }
-.projectSec3Img{
+
+.projectSec3Img {
     width: 100%;
 }
-section.three .circus{
+
+section.three .circus {
     width: 80px;
     height: 40px;
     position: absolute;
@@ -195,6 +369,7 @@ section.three .circus{
     bottom: -20px;
     z-index: 0;
 }
+
 /* @media (max-width:575px) {
     section.tow{
         padding: 20px 10px px;
@@ -204,15 +379,17 @@ section.three .circus{
 } */
 
 
-section.four{
-    background-color:#D4D4D4;
+section.four {
+    background-color: #D4D4D4;
 }
-section.four img{
+
+section.four img {
     max-width: 100%;
     width: 100%;
     height: 100%;
 }
-section.four h5{
+
+section.four h5 {
     left: 20px;
     top: 20px;
     max-width: 400px;
@@ -230,61 +407,61 @@ section.four h5{
 
 
 @media (max-width:767px) {
-    .project-img{
-        max-width:340px;
+    .project-img {
+        max-width: 340px;
         height: 400px;
     }
-    .project-img-small{
-        max-width:300px;
+
+    .project-img-small {
+        max-width: 300px;
         height: 350px;
     }
 }
 
 @media (max-width:700px) {
-    .project-img{
-        max-width:300px;
+    .project-img {
+        max-width: 300px;
         height: 360px;
     }
-    .project-img-small{
-        max-width:260px;
+
+    .project-img-small {
+        max-width: 260px;
         height: 310px;
     }
 }
+
 @media (max-width:600px) {
-    .project-img{
-        max-width:260px;
+    .project-img {
+        max-width: 260px;
         height: 300px;
     }
-    .project-img-small{
-        max-width:220px;
+
+    .project-img-small {
+        max-width: 220px;
         height: 270px;
     }
 }
 
 @media (max-width:500px) {
-    .project-img{
-        max-width:180px;
+    .project-img {
+        max-width: 180px;
         height: 260px;
     }
-    .project-img-small{
-        max-width:140px;
+
+    .project-img-small {
+        max-width: 140px;
         height: 210px;
     }
 }
 
 @media (max-width:400px) {
-    .project-img{
-        max-width:150px;
+    .project-img {
+        max-width: 150px;
         height: 230px;
     }
-    .project-img-small{
-        max-width:120px;
+
+    .project-img-small {
+        max-width: 120px;
         height: 170px;
     }
 }
-
-
-
-
-
-
