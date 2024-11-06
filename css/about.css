@@ -168,6 +168,7 @@ section.three {
 
 img:not(.fly-image) {
     filter: grayscale(1);
+    
 }
 
 .team-member {}
